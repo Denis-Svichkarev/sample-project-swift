@@ -7,6 +7,10 @@
 
 import UIKit
 
+protocol HomeCoordinatorDelegate: AnyObject {
+    func toggleStateRequested()
+}
+
 class HomeCoordinator {
     var navigationController: UINavigationController
     var userViewModel: UserViewModel
@@ -19,7 +23,11 @@ class HomeCoordinator {
     func start() {
         let storyboard = UIStoryboard(name: "HomeStoryboard", bundle: nil)
         let homeVC = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        homeVC.viewModel = userViewModel
+        
+        let homeViewModel = HomeViewModel()
+        homeVC.userViewModel = userViewModel
+        homeVC.homeViewModel = homeViewModel
+        homeVC.homeViewModel?.delegate = homeVC
         navigationController.pushViewController(homeVC, animated: false)
     }
 }

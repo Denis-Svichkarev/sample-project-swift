@@ -12,8 +12,9 @@ protocol UserViewModelDelegate: AnyObject {
 }
 
 class UserViewModel {
-    weak var delegate: UserViewModelDelegate?
     private let userService: UserService
+    
+    weak var delegate: UserViewModelDelegate?
 
     var user: User? {
         didSet {
