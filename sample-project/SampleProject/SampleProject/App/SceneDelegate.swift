@@ -14,7 +14,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     var homeCoordinator: HomeCoordinator?
     var userViewModel: UserViewModel?
 
-    let userService: UserService = CoreDataTaskService()
+    let userService: UserService = MockUserService()
 
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         guard let windowScene = (scene as? UIWindowScene) else { return }
