@@ -9,41 +9,33 @@ import UIKit
 
 class AuthCoordinator {
     var navigationController: UINavigationController
+    var loginVC: LoginViewController!
+    
     var userViewModel: UserViewModel
-
-    init(navigationController: UINavigationController, userViewModel: UserViewModel) {
+    let userService: UserService = MockUserService()
+    
+    init(navigationController: UINavigationController) {
         self.navigationController = navigationController
-        self.userViewModel = userViewModel
-        self.userViewModel.delegate = self
+        userViewModel = UserViewModel(userService: userService)
+        userViewModel.delegate = self
     }
 
     func start() {
-        let storyboard = UIStoryboard(name: "AuthStoryboard", bundle: nil)
-        let loginVC = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-        loginVC.viewModel = userViewModel
-        navigationController.pushViewController(loginVC, animated: false)
+        loginVC = LoginViewController(userViewModel: userViewModel)
+        navigationController.setViewControllers([loginVC], animated: true)
     }
 }
 
 extension AuthCoordinator: UserViewModelDelegate {
     func didAuthenticateUser() {
-        let homeCoordinator = HomeCoordinator(navigationController: navigationController, userViewModel: userViewModel)
-        homeCoordinator.start()
+        loginVC.currentState = .success
     }
-    
+
     func didFailToAuthenticateUser() {
-        let alertController = UIAlertController(title: "Login failed", message: "Please check your credentials", preferredStyle: .alert)
-
-        let okAction = UIAlertAction(title: "Close", style: .default) { _ in }
-        alertController.addAction(okAction)
-        navigationController.present(alertController, animated: true, completion: nil)
+        loginVC.currentState = .failure("Authentication failed")
     }
-    
-    func didFailInput() {
-        let alertController = UIAlertController(title: "Login failed", message: "Username and password can not be empty", preferredStyle: .alert)
 
-        let okAction = UIAlertAction(title: "Close", style: .default) { _ in }
-        alertController.addAction(okAction)
-        navigationController.present(alertController, animated: true, completion: nil)
+    func didFailInput() {
+        loginVC.currentState = .failure("Invalid input")
     }
 }

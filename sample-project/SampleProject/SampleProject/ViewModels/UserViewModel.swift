@@ -40,7 +40,8 @@ class UserViewModel {
     }
 
     func saveUser(username: String?, password: String?) {
-        guard let username = username, username != "", let password = password, password != "" else {
+        guard let username = username, !username.isEmpty,
+                let password = password, !password.isEmpty else {
             delegate?.didFailInput()
             return
         }

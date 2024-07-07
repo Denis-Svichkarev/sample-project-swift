@@ -7,27 +7,15 @@
 
 import UIKit
 
-protocol HomeCoordinatorDelegate: AnyObject {
-    func toggleStateRequested()
-}
-
 class HomeCoordinator {
     var navigationController: UINavigationController
-    var userViewModel: UserViewModel
-
-    init(navigationController: UINavigationController, userViewModel: UserViewModel) {
+    
+    init(navigationController: UINavigationController) {
         self.navigationController = navigationController
-        self.userViewModel = userViewModel
     }
 
     func start() {
-        let storyboard = UIStoryboard(name: "HomeStoryboard", bundle: nil)
-        let homeVC = storyboard.instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
-        
-        let homeViewModel = HomeViewModel()
-        homeVC.userViewModel = userViewModel
-        homeVC.homeViewModel = homeViewModel
-        homeVC.homeViewModel?.delegate = homeVC
-        navigationController.pushViewController(homeVC, animated: false)
+        // TODO: Use HomeTabView
+        navigationController.setViewControllers([UIViewController()], animated: true)
     }
 }

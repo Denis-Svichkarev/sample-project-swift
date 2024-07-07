@@ -13,8 +13,8 @@ class MockUserService: UserService {
         
         DispatchQueue.main.asyncAfter(deadline: delay) {
             let user = User(id: "1", username: "John", password: "secret123")
-            completion(user)
-//            completion(nil)
+//            completion(user)
+            completion(nil)
         }
     }
 
