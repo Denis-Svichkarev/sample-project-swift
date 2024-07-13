@@ -22,10 +22,10 @@
 		2502C32F2C301D37007089D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502C32E2C301D37007089D4 /* LoginViewController.swift */; };
 		2502C3312C301D6A007089D4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502C3302C301D6A007089D4 /* RegisterViewController.swift */; };
 		2502C3372C3098CD007089D4 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502C3362C3098CD007089D4 /* UserService.swift */; };
-		2502C3392C309DEB007089D4 /* HomeStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2502C3382C309DEB007089D4 /* HomeStoryboard.storyboard */; };
 		2502C33E2C309E7E007089D4 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502C33D2C309E7E007089D4 /* HomeCoordinator.swift */; };
 		2502C3402C315CC2007089D4 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502C33F2C315CC2007089D4 /* LoadingViewController.swift */; };
-		2502C3442C31CEDA007089D4 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2502C3432C31CEDA007089D4 /* LoadingViewController.xib */; };
+		25130C372C4199EC00DC62D2 /* LoadingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25130C362C4199EC00DC62D2 /* LoadingViewController.xib */; };
+		25130C3F2C42D03B00DC62D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25130C3E2C42D03B00DC62D2 /* HomeViewController.swift */; };
 		259F60872C396C18007F1F67 /* FirebaseUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F60862C396C18007F1F67 /* FirebaseUserService.swift */; };
 		259F60892C396C36007F1F67 /* FriendFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F60882C396C36007F1F67 /* FriendFetchingService.swift */; };
 		259F608B2C396C43007F1F67 /* PostFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F608A2C396C43007F1F67 /* PostFetchingService.swift */; };
@@ -40,12 +40,12 @@
 		25A4B41A2C3ACDD60052157F /* LoginState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B4192C3ACDD60052157F /* LoginState.swift */; };
 		25A4B41F2C3AD0F80052157F /* LoadingStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B41E2C3AD0F80052157F /* LoadingStateViewController.swift */; };
 		25A4B4212C3AD1050052157F /* FailureStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B4202C3AD1050052157F /* FailureStateViewController.swift */; };
-		25A4B4232C3AD1120052157F /* SuccessStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B4222C3AD1120052157F /* SuccessStateViewController.swift */; };
 		25A4B4292C3AD25A0052157F /* RegistrationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B4282C3AD25A0052157F /* RegistrationState.swift */; };
 		25A4B42D2C3AD8ED0052157F /* LoginStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B42C2C3AD8ED0052157F /* LoginStateViewController.swift */; };
 		25A4B42F2C3AD9090052157F /* RegistrationStateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B42E2C3AD9090052157F /* RegistrationStateViewController.swift */; };
 		25A4B4322C3AE2590052157F /* UIViewController+ChildManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B4312C3AE2590052157F /* UIViewController+ChildManagement.swift */; };
-		25A4B4342C3AF1240052157F /* InitialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B4332C3AF1240052157F /* InitialCoordinator.swift */; };
+		25A4B4342C3AF1240052157F /* CoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B4332C3AF1240052157F /* CoreCoordinator.swift */; };
+		25A4B4362C3F12FE0052157F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B4352C3F12FE0052157F /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,10 +85,10 @@
 		2502C32E2C301D37007089D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		2502C3302C301D6A007089D4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		2502C3362C3098CD007089D4 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
-		2502C3382C309DEB007089D4 /* HomeStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeStoryboard.storyboard; sourceTree = "<group>"; };
 		2502C33D2C309E7E007089D4 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		2502C33F2C315CC2007089D4 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
-		2502C3432C31CEDA007089D4 /* LoadingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingViewController.xib; sourceTree = "<group>"; };
+		25130C362C4199EC00DC62D2 /* LoadingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoadingViewController.xib; path = SampleProject/Core/Views/XIBs/LoadingViewController.xib; sourceTree = SOURCE_ROOT; };
+		25130C3E2C42D03B00DC62D2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		259F60862C396C18007F1F67 /* FirebaseUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserService.swift; sourceTree = "<group>"; };
 		259F60882C396C36007F1F67 /* FriendFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFetchingService.swift; sourceTree = "<group>"; };
 		259F608A2C396C43007F1F67 /* PostFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFetchingService.swift; sourceTree = "<group>"; };
@@ -103,12 +103,12 @@
 		25A4B4192C3ACDD60052157F /* LoginState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginState.swift; sourceTree = "<group>"; };
 		25A4B41E2C3AD0F80052157F /* LoadingStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingStateViewController.swift; sourceTree = "<group>"; };
 		25A4B4202C3AD1050052157F /* FailureStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FailureStateViewController.swift; sourceTree = "<group>"; };
-		25A4B4222C3AD1120052157F /* SuccessStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessStateViewController.swift; sourceTree = "<group>"; };
 		25A4B4282C3AD25A0052157F /* RegistrationState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationState.swift; sourceTree = "<group>"; };
 		25A4B42C2C3AD8ED0052157F /* LoginStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStateViewController.swift; sourceTree = "<group>"; };
 		25A4B42E2C3AD9090052157F /* RegistrationStateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationStateViewController.swift; sourceTree = "<group>"; };
 		25A4B4312C3AE2590052157F /* UIViewController+ChildManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ChildManagement.swift"; sourceTree = "<group>"; };
-		25A4B4332C3AF1240052157F /* InitialCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialCoordinator.swift; sourceTree = "<group>"; };
+		25A4B4332C3AF1240052157F /* CoreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreCoordinator.swift; sourceTree = "<group>"; };
+		25A4B4352C3F12FE0052157F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -160,11 +160,9 @@
 			isa = PBXGroup;
 			children = (
 				2502C3322C302023007089D4 /* App */,
-				2502C31B2C2FFAA6007089D4 /* Models */,
-				2502C31C2C2FFAAD007089D4 /* Views */,
-				2502C31F2C2FFAC9007089D4 /* ViewModels */,
-				2502C3202C2FFAD0007089D4 /* Coordinators */,
-				2502C3212C2FFADA007089D4 /* Services */,
+				25A4B43D2C41964E0052157F /* Core */,
+				25A4B4372C4194DD0052157F /* AuthModule */,
+				25A4B4382C4194EA0052157F /* HomeModule */,
 				25A4B4302C3AE23B0052157F /* Extensions */,
 				2502C3222C2FFAE1007089D4 /* Resources */,
 				25A4B4152C3AC4A10052157F /* SupportingFiles */,
@@ -192,7 +190,6 @@
 		2502C31B2C2FFAA6007089D4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				2502C3272C301C7E007089D4 /* User.swift */,
 				259F608E2C396D4A007F1F67 /* Post.swift */,
 			);
 			path = Models;
@@ -201,8 +198,8 @@
 		2502C31C2C2FFAAD007089D4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				2502C32D2C301D17007089D4 /* AuthViews */,
-				2502C33C2C309E0F007089D4 /* HomeViews */,
+				25130C3E2C42D03B00DC62D2 /* HomeViewController.swift */,
+				25A4B4172C3ACACF0052157F /* HomeTabView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -210,7 +207,6 @@
 		2502C31F2C2FFAC9007089D4 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				2502C3292C301C9C007089D4 /* UserViewModel.swift */,
 				259F60A42C397EA4007F1F67 /* HomeViewModel.swift */,
 			);
 			path = ViewModels;
@@ -219,19 +215,9 @@
 		2502C3202C2FFAD0007089D4 /* Coordinators */ = {
 			isa = PBXGroup;
 			children = (
-				25A4B4332C3AF1240052157F /* InitialCoordinator.swift */,
-				2502C32B2C301CEE007089D4 /* AuthCoordinator.swift */,
 				2502C33D2C309E7E007089D4 /* HomeCoordinator.swift */,
 			);
 			path = Coordinators;
-			sourceTree = "<group>";
-		};
-		2502C3212C2FFADA007089D4 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				25A4B4162C3AC5720052157F /* Backend */,
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		2502C3222C2FFAE1007089D4 /* Resources */ = {
@@ -239,29 +225,10 @@
 			children = (
 				2502C2F92C2FF8FB007089D4 /* Info.plist */,
 				2502C2F42C2FF8FB007089D4 /* Assets.xcassets */,
-				2502C3242C2FFB31007089D4 /* Storyboards */,
-				2502C3252C2FFB3E007089D4 /* XIBs */,
+				2502C2F62C2FF8FB007089D4 /* LaunchScreen.storyboard */,
 				2502C3262C2FFC2C007089D4 /* CoreData */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		2502C3242C2FFB31007089D4 /* Storyboards */ = {
-			isa = PBXGroup;
-			children = (
-				2502C2F62C2FF8FB007089D4 /* LaunchScreen.storyboard */,
-				2502C2EE2C2FF8F9007089D4 /* AuthStoryboard.storyboard */,
-				2502C3382C309DEB007089D4 /* HomeStoryboard.storyboard */,
-			);
-			path = Storyboards;
-			sourceTree = "<group>";
-		};
-		2502C3252C2FFB3E007089D4 /* XIBs */ = {
-			isa = PBXGroup;
-			children = (
-				2502C3432C31CEDA007089D4 /* LoadingViewController.xib */,
-			);
-			path = XIBs;
 			sourceTree = "<group>";
 		};
 		2502C3262C2FFC2C007089D4 /* CoreData */ = {
@@ -270,17 +237,6 @@
 				2502C2F12C2FF8F9007089D4 /* SampleProject.xcdatamodeld */,
 			);
 			path = CoreData;
-			sourceTree = "<group>";
-		};
-		2502C32D2C301D17007089D4 /* AuthViews */ = {
-			isa = PBXGroup;
-			children = (
-				25A4B4252C3AD1E60052157F /* InitialCheck */,
-				25A4B4262C3AD1EC0052157F /* Login */,
-				25A4B4272C3AD1F50052157F /* Registration */,
-				25A4B4242C3AD1DE0052157F /* SharedStates */,
-			);
-			path = AuthViews;
 			sourceTree = "<group>";
 		};
 		2502C3322C302023007089D4 /* App */ = {
@@ -292,12 +248,52 @@
 			path = App;
 			sourceTree = "<group>";
 		};
-		2502C33C2C309E0F007089D4 /* HomeViews */ = {
+		25130C382C42CE3A00DC62D2 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				25A4B4172C3ACACF0052157F /* HomeTabView.swift */,
+				2502C2EE2C2FF8F9007089D4 /* AuthStoryboard.storyboard */,
 			);
-			path = HomeViews;
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		25130C392C42CE4400DC62D2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				25A4B4262C3AD1EC0052157F /* Login */,
+				25A4B4272C3AD1F50052157F /* Registration */,
+				25A4B4242C3AD1DE0052157F /* SharedStates */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		25130C3A2C42CE4D00DC62D2 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
+		25130C3B2C42CE5500DC62D2 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		25130C3C2C42CF3200DC62D2 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2502C33F2C315CC2007089D4 /* LoadingViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		25130C3D2C42CF3900DC62D2 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				25130C362C4199EC00DC62D2 /* LoadingViewController.xib */,
+			);
+			path = XIBs;
 			sourceTree = "<group>";
 		};
 		259F60902C3970E5007F1F67 /* User */ = {
@@ -352,17 +348,8 @@
 			children = (
 				25A4B41E2C3AD0F80052157F /* LoadingStateViewController.swift */,
 				25A4B4202C3AD1050052157F /* FailureStateViewController.swift */,
-				25A4B4222C3AD1120052157F /* SuccessStateViewController.swift */,
 			);
 			path = SharedStates;
-			sourceTree = "<group>";
-		};
-		25A4B4252C3AD1E60052157F /* InitialCheck */ = {
-			isa = PBXGroup;
-			children = (
-				2502C33F2C315CC2007089D4 /* LoadingViewController.swift */,
-			);
-			path = InitialCheck;
 			sourceTree = "<group>";
 		};
 		25A4B4262C3AD1EC0052157F /* Login */ = {
@@ -391,6 +378,115 @@
 				25A4B4312C3AE2590052157F /* UIViewController+ChildManagement.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		25A4B4372C4194DD0052157F /* AuthModule */ = {
+			isa = PBXGroup;
+			children = (
+				25A4B4392C4194F50052157F /* Coordinators */,
+				25A4B43A2C4194FE0052157F /* Models */,
+				25A4B43B2C4195040052157F /* ViewModels */,
+				25A4B43C2C41950A0052157F /* Views */,
+			);
+			path = AuthModule;
+			sourceTree = "<group>";
+		};
+		25A4B4382C4194EA0052157F /* HomeModule */ = {
+			isa = PBXGroup;
+			children = (
+				2502C3202C2FFAD0007089D4 /* Coordinators */,
+				2502C31B2C2FFAA6007089D4 /* Models */,
+				2502C31F2C2FFAC9007089D4 /* ViewModels */,
+				2502C31C2C2FFAAD007089D4 /* Views */,
+			);
+			path = HomeModule;
+			sourceTree = "<group>";
+		};
+		25A4B4392C4194F50052157F /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				2502C32B2C301CEE007089D4 /* AuthCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		25A4B43A2C4194FE0052157F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		25A4B43B2C4195040052157F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		25A4B43C2C41950A0052157F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25130C392C42CE4400DC62D2 /* ViewControllers */,
+				25130C382C42CE3A00DC62D2 /* Storyboards */,
+				25130C3B2C42CE5500DC62D2 /* CustomViews */,
+				25130C3A2C42CE4D00DC62D2 /* XIBs */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		25A4B43D2C41964E0052157F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				25A4B43E2C41965D0052157F /* Coordinators */,
+				25A4B43F2C4196660052157F /* Models */,
+				25A4B4402C41966B0052157F /* ViewModels */,
+				25A4B4422C4198E80052157F /* Views */,
+				25A4B4412C4196710052157F /* Services */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		25A4B43E2C41965D0052157F /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				25A4B4352C3F12FE0052157F /* Coordinator.swift */,
+				25A4B4332C3AF1240052157F /* CoreCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		25A4B43F2C4196660052157F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2502C3272C301C7E007089D4 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		25A4B4402C41966B0052157F /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2502C3292C301C9C007089D4 /* UserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		25A4B4412C4196710052157F /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				25A4B4162C3AC5720052157F /* Backend */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		25A4B4422C4198E80052157F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				25130C3C2C42CF3200DC62D2 /* ViewControllers */,
+				25130C3D2C42CF3900DC62D2 /* XIBs */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -499,9 +595,8 @@
 			files = (
 				2502C2F82C2FF8FB007089D4 /* LaunchScreen.storyboard in Resources */,
 				2502C2F52C2FF8FB007089D4 /* Assets.xcassets in Resources */,
-				2502C3392C309DEB007089D4 /* HomeStoryboard.storyboard in Resources */,
-				2502C3442C31CEDA007089D4 /* LoadingViewController.xib in Resources */,
 				2502C2F02C2FF8F9007089D4 /* AuthStoryboard.storyboard in Resources */,
+				25130C372C4199EC00DC62D2 /* LoadingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,20 +634,21 @@
 				25A4B4182C3ACACF0052157F /* HomeTabView.swift in Sources */,
 				25A4B41F2C3AD0F80052157F /* LoadingStateViewController.swift in Sources */,
 				25A4B4292C3AD25A0052157F /* RegistrationState.swift in Sources */,
-				25A4B4342C3AF1240052157F /* InitialCoordinator.swift in Sources */,
+				25A4B4342C3AF1240052157F /* CoreCoordinator.swift in Sources */,
 				2502C32C2C301CEE007089D4 /* AuthCoordinator.swift in Sources */,
 				25A4B41A2C3ACDD60052157F /* LoginState.swift in Sources */,
+				25A4B4362C3F12FE0052157F /* Coordinator.swift in Sources */,
 				259F60892C396C36007F1F67 /* FriendFetchingService.swift in Sources */,
 				2502C33E2C309E7E007089D4 /* HomeCoordinator.swift in Sources */,
 				2502C3282C301C7E007089D4 /* User.swift in Sources */,
 				25A4B4322C3AE2590052157F /* UIViewController+ChildManagement.swift in Sources */,
-				25A4B4232C3AD1120052157F /* SuccessStateViewController.swift in Sources */,
 				2502C32F2C301D37007089D4 /* LoginViewController.swift in Sources */,
 				259F60942C397167007F1F67 /* FirebaseFriendService.swift in Sources */,
 				259F608D2C396CAE007F1F67 /* MockUserService.swift in Sources */,
 				2502C2F32C2FF8F9007089D4 /* SampleProject.xcdatamodeld in Sources */,
 				259F60982C397265007F1F67 /* MockFriendService.swift in Sources */,
 				259F608F2C396D4A007F1F67 /* Post.swift in Sources */,
+				25130C3F2C42D03B00DC62D2 /* HomeViewController.swift in Sources */,
 				2502C3402C315CC2007089D4 /* LoadingViewController.swift in Sources */,
 				25A4B42D2C3AD8ED0052157F /* LoginStateViewController.swift in Sources */,
 				2502C3372C3098CD007089D4 /* UserService.swift in Sources */,
@@ -664,7 +760,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -721,7 +817,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -745,7 +841,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -773,7 +869,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

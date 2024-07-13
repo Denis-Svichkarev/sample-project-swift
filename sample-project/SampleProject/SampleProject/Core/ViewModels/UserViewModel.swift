@@ -5,27 +5,15 @@
 //  Created by Denis Svichkarev on 29/06/24.
 //
 
-protocol UserViewModelDelegate: AnyObject {
-    func didAuthenticateUser()
-    func didFailToAuthenticateUser()
-    func didFailInput()
-}
+import Combine
 
 class UserViewModel {
     private let userService: UserService
     
-    weak var delegate: UserViewModelDelegate?
-
-    var user: User? {
-        didSet {
-            self.userDidChange?(user)
-            if user != nil {
-                self.delegate?.didAuthenticateUser()
-            } else {
-                self.delegate?.didFailToAuthenticateUser()
-            }
-        }
-    }
+    @Published var user: User? = nil
+    @Published var inputError: Bool = false
+       
+    private var cancellables = Set<AnyCancellable>()
 
     var userDidChange: ((User?) -> Void)?
 
@@ -42,9 +30,11 @@ class UserViewModel {
     func saveUser(username: String?, password: String?) {
         guard let username = username, !username.isEmpty,
                 let password = password, !password.isEmpty else {
-            delegate?.didFailInput()
+            inputError = true
             return
         }
+        
+        inputError = false
         
         let user = User(username: username, password: password)
         userService.saveUser(user) { [weak self] success in
@@ -59,5 +49,9 @@ class UserViewModel {
     func clearUser() {
         userService.clearUser()
         user = nil
+    }
+    
+    deinit {
+        cancellables.forEach { $0.cancel() }
     }
 }

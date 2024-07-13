@@ -15,13 +15,16 @@ struct TabItem {
 
 struct HomeTabView: View {
     @State private var selectedTab = 0
-        
-    let tabItems: [TabItem] = [
-        TabItem(view: AnyView(NewsView()), tabTitle: "News", tabImage: "news_icon"),
-        TabItem(view: AnyView(FriendsView()), tabTitle: "Friends", tabImage: "friends_icon"),
-        TabItem(view: AnyView(ProfileView()), tabTitle: "Profile", tabImage: "profile_icon"),
-        TabItem(view: AnyView(SettingsView()), tabTitle: "Settings", tabImage: "settings_icon")
-    ]
+    var userViewModel: UserViewModel
+    
+    var tabItems: [TabItem] {
+        [
+            TabItem(view: AnyView(NewsView()), tabTitle: "News", tabImage: "news_icon"),
+            TabItem(view: AnyView(FriendsView()), tabTitle: "Friends", tabImage: "friends_icon"),
+            TabItem(view: AnyView(ProfileView()), tabTitle: "Profile", tabImage: "profile_icon"),
+            TabItem(view: AnyView(SettingsView(userViewModel: userViewModel)), tabTitle: "Settings", tabImage: "settings_icon")
+        ]
+    }
         
     var body: some View {
         TabView(selection: $selectedTab) {
@@ -56,13 +59,20 @@ struct ProfileView: View {
 }
 
 struct SettingsView: View {
+    var userViewModel: UserViewModel
+    
     var body: some View {
         Text("Settings View")
+        Button(action: {
+            userViewModel.clearUser()
+        }) {
+            Text("Logout")
+        }
     }
 }
 
 struct HomeTabView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeTabView()
+        HomeTabView(userViewModel: UserViewModel(userService: MockUserService()))
     }
 }

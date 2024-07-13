@@ -1,13 +1,12 @@
 //
-//  RegistrationState.swift
+//  LoginState.swift
 //  SampleProject
 //
 //  Created by Denis Svichkarev on 07.07.2024.
 //
 
-enum RegistrationState {
+enum LoginState {
     case initial
     case loading
-    case success
-    case failure(String)
+    case failure
 }

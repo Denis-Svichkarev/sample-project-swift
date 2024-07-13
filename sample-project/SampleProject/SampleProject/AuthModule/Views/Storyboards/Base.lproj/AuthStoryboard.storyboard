@@ -184,48 +184,6 @@
             </objects>
             <point key="canvasLocation" x="885" y="4"/>
         </scene>
-        <!--Success State View Controller-->
-        <scene sceneID="gPC-hS-OVJ">
-            <objects>
-                <viewController storyboardIdentifier="SuccessStateViewController" id="s09-wd-0ju" customClass="SuccessStateViewController" customModule="SampleProject" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="R3h-H8-VQi">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1x9-Yu-r9x">
-                                <rect key="frame" x="149" y="205.66666666666666" width="95" height="27"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lx4-b3-2Jy">
-                                <rect key="frame" x="126.66666666666669" y="272.66666666666669" width="140" height="40"/>
-                                <color key="backgroundColor" systemColor="tintColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="140" id="2kz-oB-QAx"/>
-                                    <constraint firstAttribute="height" constant="40" id="bBQ-7Z-d9T"/>
-                                </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" title="Start using"/>
-                                <connections>
-                                    <action selector="onStartUsingButtonPressed:" destination="s09-wd-0ju" eventType="touchUpInside" id="ARf-Vg-Wxh"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="yPh-uq-GJE"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstItem="lx4-b3-2Jy" firstAttribute="top" secondItem="1x9-Yu-r9x" secondAttribute="bottom" constant="40" id="Oq2-sx-n74"/>
-                            <constraint firstItem="1x9-Yu-r9x" firstAttribute="centerY" secondItem="yPh-uq-GJE" secondAttribute="centerY" multiplier="0.5" id="QEI-Nc-rzP"/>
-                            <constraint firstItem="lx4-b3-2Jy" firstAttribute="centerX" secondItem="yPh-uq-GJE" secondAttribute="centerX" id="S7b-8a-Apv"/>
-                            <constraint firstItem="1x9-Yu-r9x" firstAttribute="centerX" secondItem="yPh-uq-GJE" secondAttribute="centerX" id="sOE-QE-lPM"/>
-                        </constraints>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RvB-5T-yQv" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2352" y="4"/>
-        </scene>
         <!--Failure State View Controller-->
         <scene sceneID="FpJ-En-Bmx">
             <objects>
