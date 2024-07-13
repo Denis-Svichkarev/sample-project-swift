@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "6DF8C5BE-A30B-405A-98D5-372F5B6B5943"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7DA0C5D1-AD17-48B7-9701-E96679525FB1"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SampleProject/Core/ViewModels/UserViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
+            landmarkName = "UserViewModel"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "7DA0C5D1-AD17-48B7-9701-E96679525FB1 - 9375c3d7f9099770"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleProject.UserViewModel.deinit"
+                  moduleName = "SampleProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/denissvichkarev/Projects/SampleProject/sample-project/SampleProject/SampleProject/Core/ViewModels/UserViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "33">
+               </Location>
+               <Location
+                  uuid = "7DA0C5D1-AD17-48B7-9701-E96679525FB1 - 1f0f3e7c6a55771"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.AnyCancellable) -&gt; () in SampleProject.UserViewModel.deinit"
+                  moduleName = "SampleProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/denissvichkarev/Projects/SampleProject/sample-project/SampleProject/SampleProject/Core/ViewModels/UserViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "29">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CF123210-91CD-47A0-B816-A0895218CCE8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SampleProject/Core/Coordinators/CoreCoordinator.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "68"
+            endingLineNumber = "68"
+            landmarkName = "CoreCoordinator"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "CF123210-91CD-47A0-B816-A0895218CCE8 - f768e057eadc7509"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SampleProject.CoreCoordinator.deinit"
+                  moduleName = "SampleProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/denissvichkarev/Projects/SampleProject/sample-project/SampleProject/SampleProject/Core/Coordinators/CoreCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "33">
+               </Location>
+               <Location
+                  uuid = "CF123210-91CD-47A0-B816-A0895218CCE8 - 80dc0ff3516102c4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Combine.AnyCancellable) -&gt; () in SampleProject.CoreCoordinator.deinit"
+                  moduleName = "SampleProject"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/denissvichkarev/Projects/SampleProject/sample-project/SampleProject/SampleProject/Core/Coordinators/CoreCoordinator.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "68"
+                  endingLineNumber = "68"
+                  offsetFromSymbolStart = "29">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
