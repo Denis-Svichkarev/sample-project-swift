@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -78,7 +78,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="loginButton" destination="WSN-eq-9aF" id="q68-Ce-0yo"/>
                         <outlet property="passwordTextField" destination="YV7-F2-YA8" id="7Zw-km-g5G"/>
+                        <outlet property="registerButton" destination="dS4-zT-3kT" id="NSW-k3-QL8"/>
+                        <outlet property="titleLabel" destination="wTg-bU-8ZM" id="aKV-3Y-fzR"/>
                         <outlet property="usernameTextField" destination="Tbu-Ga-WZc" id="S65-B1-RsC"/>
                     </connections>
                 </viewController>
@@ -150,6 +153,8 @@
                     <connections>
                         <outlet property="confirmPasswordTextField" destination="LjL-Lj-HKT" id="iCf-7a-4uB"/>
                         <outlet property="passwordTextField" destination="ZhI-eW-9AI" id="heP-ZG-eEZ"/>
+                        <outlet property="registerButton" destination="2NP-MS-vEP" id="zOf-sj-djP"/>
+                        <outlet property="titleLabel" destination="VYa-i9-8Sk" id="Bwd-16-puA"/>
                         <outlet property="usernameTextField" destination="pxD-f4-ODk" id="GIM-g8-Hw8"/>
                     </connections>
                 </viewController>
@@ -179,6 +184,9 @@
                             <constraint firstItem="KcU-cr-V9N" firstAttribute="centerY" secondItem="Yoi-tJ-YxI" secondAttribute="centerY" multiplier="0.5" id="iIh-D4-iRb"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="KcU-cr-V9N" id="QxJ-fb-On1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SBq-TM-UMJ" sceneMemberID="firstResponder"/>
             </objects>
@@ -221,6 +229,10 @@
                             <constraint firstItem="jbx-Je-siL" firstAttribute="top" secondItem="iwe-Et-Lvu" secondAttribute="bottom" constant="40" id="JOR-1C-EL9"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="iwe-Et-Lvu" id="KIz-wy-5BW"/>
+                        <outlet property="tryAgainButton" destination="jbx-Je-siL" id="o7M-Dh-LQC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="S3T-0j-6kD" sceneMemberID="firstResponder"/>
             </objects>
@@ -232,7 +244,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

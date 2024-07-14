@@ -8,8 +8,13 @@
 import UIKit
 
 class LoadingStateViewController: UIViewController {
-
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    private let viewModel = AuthLoadingViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleLabel.text = viewModel.screenTitle
     }
 }

@@ -8,8 +8,14 @@
 import UIKit
 
 class LoadingViewController: UIViewController {
+    @IBOutlet weak var loadingLabel: UILabel!
+    
+    private let viewModel = LoadingViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        loadingLabel.text = viewModel.loadingTitle
         
         view.backgroundColor = .white
         let activityIndicator = UIActivityIndicatorView(style: .large)

@@ -49,53 +49,35 @@
                   endingLineNumber = "55"
                   offsetFromSymbolStart = "29">
                </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "CF123210-91CD-47A0-B816-A0895218CCE8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "SampleProject/Core/Coordinators/CoreCoordinator.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "CoreCoordinator"
-            landmarkType = "3">
-            <Locations>
                <Location
-                  uuid = "CF123210-91CD-47A0-B816-A0895218CCE8 - f768e057eadc7509"
+                  uuid = "7DA0C5D1-AD17-48B7-9701-E96679525FB1 - 4ef256d37b599486"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "SampleProject.CoreCoordinator.deinit"
+                  symbolName = "SampleProject.UserViewModel.deinit"
                   moduleName = "SampleProject"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/denissvichkarev/Projects/SampleProject/sample-project/SampleProject/SampleProject/Core/Coordinators/CoreCoordinator.swift"
+                  urlString = "file:///Users/denissvichkarev/Projects/sample-project-ios/sample-project/SampleProject/SampleProject/Core/ViewModels/UserViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "33">
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "140">
                </Location>
                <Location
-                  uuid = "CF123210-91CD-47A0-B816-A0895218CCE8 - 80dc0ff3516102c4"
+                  uuid = "7DA0C5D1-AD17-48B7-9701-E96679525FB1 - dc7766e344f55487"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Combine.AnyCancellable) -&gt; () in SampleProject.CoreCoordinator.deinit"
+                  symbolName = "closure #1 (Combine.AnyCancellable) -&gt; () in SampleProject.UserViewModel.deinit"
                   moduleName = "SampleProject"
                   usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/denissvichkarev/Projects/SampleProject/sample-project/SampleProject/SampleProject/Core/Coordinators/CoreCoordinator.swift"
+                  urlString = "file:///Users/denissvichkarev/Projects/sample-project-ios/sample-project/SampleProject/SampleProject/Core/ViewModels/UserViewModel.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "29">
+                  startingLineNumber = "55"
+                  endingLineNumber = "55"
+                  offsetFromSymbolStart = "36">
                </Location>
             </Locations>
          </BreakpointContent>

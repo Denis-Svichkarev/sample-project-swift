@@ -23,8 +23,4 @@ class HomeCoordinator: Coordinator {
         homeVC = HomeViewController(userViewModel: userViewModel)
         self.window.rootViewController = UINavigationController(rootViewController: homeVC)
     }
-    
-    func logout() {
-        userViewModel.clearUser()
-    }
 }

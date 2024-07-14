@@ -49,14 +49,14 @@ class LoginViewController: UIViewController {
     }
     
     private func bindViewModel() {
-          userViewModel?.$inputError
-              .sink { [weak self] hasInputError in
-                  guard let self = self else { return }
-                  if hasInputError {
-                      self.currentState = .failure
-                  }
-              }
-              .store(in: &cancellables)
+        userViewModel?.$inputError
+            .sink { [weak self] hasInputError in
+                guard let self = self else { return }
+                if hasInputError {
+                    self.currentState = .failure
+                }
+            }
+            .store(in: &cancellables)
       }
     
     private func updateViewState() {

@@ -12,11 +12,18 @@ protocol FailureStateViewControllerDelegate: AnyObject {
 }
 
 class FailureStateViewController: UIViewController {
-
+    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var tryAgainButton: UIButton!
+    
+    private let viewModel = AuthFailureViewModel()
+    
     weak var delegate: FailureStateViewControllerDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleLabel.text = viewModel.screenTitle
+        tryAgainButton.setTitle(viewModel.tryAgainButtonTitle, for: .normal)
     }
     
     @IBAction func onTryAgainButtonPressed(_ sender: Any) {
