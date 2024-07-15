@@ -15,4 +15,8 @@ class LocalizableService {
     func localizedString(forKey key: String) -> String {
         return NSLocalizedString(key, comment: "")
     }
+    
+    func localizedString(forKey key: String, tableName: String) -> String {
+        return NSLocalizedString(key, tableName: tableName, bundle: .main, value: "", comment: "")
+    }
 }

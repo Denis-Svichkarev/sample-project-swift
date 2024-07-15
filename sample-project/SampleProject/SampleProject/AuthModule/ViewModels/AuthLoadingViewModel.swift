@@ -15,6 +15,6 @@ class AuthLoadingViewModel {
     }
     
     var screenTitle: String {
-        return localizationService.localizedString(forKey: "auth_loading_screen_title")
+        return localizationService.localizedString(forKey: "auth_loading_screen_title", tableName: "AuthLocalizable")
     }
 }

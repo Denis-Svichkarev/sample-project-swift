@@ -15,22 +15,22 @@ class LoginViewModel {
     }
     
     var screenTitle: String {
-        return localizationService.localizedString(forKey: "login_screen_title")
+        return localizationService.localizedString(forKey: "login_screen_title", tableName: "AuthLocalizable")
     }
     
     var usernamePlaceholder: String {
-        return localizationService.localizedString(forKey: "login_username_placeholder")
+        return localizationService.localizedString(forKey: "login_username_placeholder", tableName: "AuthLocalizable")
     }
     
     var passwordPlaceholder: String {
-        return localizationService.localizedString(forKey: "login_password_placeholder")
+        return localizationService.localizedString(forKey: "login_password_placeholder", tableName: "AuthLocalizable")
     }
     
     var loginButtonTitle: String {
-        return localizationService.localizedString(forKey: "login_button_title")
+        return localizationService.localizedString(forKey: "login_button_title", tableName: "AuthLocalizable")
     }
     
     var registerButtonTitle: String {
-        return localizationService.localizedString(forKey: "register_button_title")
+        return localizationService.localizedString(forKey: "register_button_title", tableName: "AuthLocalizable")
     }
 }

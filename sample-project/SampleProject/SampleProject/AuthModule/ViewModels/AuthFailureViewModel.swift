@@ -15,10 +15,10 @@ class AuthFailureViewModel {
     }
     
     var screenTitle: String {
-        return localizationService.localizedString(forKey: "auth_failure_screen_title")
+        return localizationService.localizedString(forKey: "auth_failure_screen_title", tableName: "AuthLocalizable")
     }
     
     var tryAgainButtonTitle: String {
-        return localizationService.localizedString(forKey: "auth_failure_try_again_button_title")
+        return localizationService.localizedString(forKey: "auth_failure_try_again_button_title", tableName: "AuthLocalizable")
     }
 }

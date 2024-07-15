@@ -15,22 +15,22 @@ class RegisterViewModel {
     }
     
     var screenTitle: String {
-        return localizationService.localizedString(forKey: "registration_screen_title")
+        return localizationService.localizedString(forKey: "registration_screen_title", tableName: "AuthLocalizable")
     }
     
     var usernamePlaceholder: String {
-        return localizationService.localizedString(forKey: "registration_username_placeholder")
+        return localizationService.localizedString(forKey: "registration_username_placeholder", tableName: "AuthLocalizable")
     }
     
     var passwordPlaceholder: String {
-        return localizationService.localizedString(forKey: "registration_password_placeholder")
+        return localizationService.localizedString(forKey: "registration_password_placeholder", tableName: "AuthLocalizable")
     }
     
     var confirmPasswordPlaceholder: String {
-        return localizationService.localizedString(forKey: "registration_confirm_password_placeholder")
+        return localizationService.localizedString(forKey: "registration_confirm_password_placeholder", tableName: "AuthLocalizable")
     }
     
     var registerButtonTitle: String {
-        return localizationService.localizedString(forKey: "registration_register_button_title")
+        return localizationService.localizedString(forKey: "registration_register_button_title", tableName: "AuthLocalizable")
     }
 }
