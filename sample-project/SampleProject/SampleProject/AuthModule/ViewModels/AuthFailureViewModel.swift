@@ -9,7 +9,7 @@ import Foundation
 
 class AuthFailureViewModel {
     private let localizationService: LocalizableService
-    
+
     init(localizationService: LocalizableService = .shared) {
         self.localizationService = localizationService
     }

@@ -18,7 +18,7 @@
 		2502C32A2C301C9C007089D4 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502C3292C301C9C007089D4 /* UserViewModel.swift */; };
 		2502C32C2C301CEE007089D4 /* AuthCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502C32B2C301CEE007089D4 /* AuthCoordinator.swift */; };
 		2502C32F2C301D37007089D4 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502C32E2C301D37007089D4 /* LoginViewController.swift */; };
-		2502C3312C301D6A007089D4 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502C3302C301D6A007089D4 /* RegisterViewController.swift */; };
+		2502C3312C301D6A007089D4 /* RegistrationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502C3302C301D6A007089D4 /* RegistrationViewController.swift */; };
 		2502C3372C3098CD007089D4 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502C3362C3098CD007089D4 /* UserService.swift */; };
 		2502C33E2C309E7E007089D4 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502C33D2C309E7E007089D4 /* HomeCoordinator.swift */; };
 		2502C3402C315CC2007089D4 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502C33F2C315CC2007089D4 /* LoadingViewController.swift */; };
@@ -90,7 +90,7 @@
 		2502C3292C301C9C007089D4 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
 		2502C32B2C301CEE007089D4 /* AuthCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthCoordinator.swift; sourceTree = "<group>"; };
 		2502C32E2C301D37007089D4 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		2502C3302C301D6A007089D4 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		2502C3302C301D6A007089D4 /* RegistrationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationViewController.swift; sourceTree = "<group>"; };
 		2502C3362C3098CD007089D4 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 		2502C33D2C309E7E007089D4 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		2502C33F2C315CC2007089D4 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
@@ -373,7 +373,7 @@
 			isa = PBXGroup;
 			children = (
 				25A4B4282C3AD25A0052157F /* RegistrationState.swift */,
-				2502C3302C301D6A007089D4 /* RegisterViewController.swift */,
+				2502C3302C301D6A007089D4 /* RegistrationViewController.swift */,
 				25A4B42E2C3AD9090052157F /* RegistrationStateViewController.swift */,
 			);
 			path = Registration;
@@ -672,7 +672,7 @@
 			files = (
 				259F60962C39718B007F1F67 /* FirebasePostService.swift in Sources */,
 				259F609A2C397275007F1F67 /* MockPostService.swift in Sources */,
-				2502C3312C301D6A007089D4 /* RegisterViewController.swift in Sources */,
+				2502C3312C301D6A007089D4 /* RegistrationViewController.swift in Sources */,
 				259F60872C396C18007F1F67 /* FirebaseUserService.swift in Sources */,
 				25A4B4212C3AD1050052157F /* FailureStateViewController.swift in Sources */,
 				25DE865A2C43F16900A5EADC /* AuthLoadingViewModel.swift in Sources */,

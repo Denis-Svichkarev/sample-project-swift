@@ -7,12 +7,24 @@
 
 import Foundation
 
+protocol LoginViewModelDelegate: AnyObject {
+    func validationSuccess(username: String, password: String)
+    func validationFailed()
+}
+
 class LoginViewModel {
     private let localizationService: LocalizableService
     
+    var username: String?
+    var password: String?
+    
+    weak var delegate: LoginViewModelDelegate?
+       
     init(localizationService: LocalizableService = .shared) {
         self.localizationService = localizationService
     }
+    
+    // TODO: - refactor localization part
     
     var screenTitle: String {
         return localizationService.localizedString(forKey: "login_screen_title", tableName: "AuthLocalizable")
@@ -32,5 +44,22 @@ class LoginViewModel {
     
     var registerButtonTitle: String {
         return localizationService.localizedString(forKey: "register_button_title", tableName: "AuthLocalizable")
+    }
+    
+    func login() {
+        guard let username = username, let password = password else {
+            delegate?.validationFailed()
+            return
+        }
+        
+        if validateInput(username: username, password: password) {
+            delegate?.validationSuccess(username: username, password: password)
+        } else {
+            delegate?.validationFailed()
+        }
+    }
+        
+    func validateInput(username: String, password: String) -> Bool {
+        return !username.isEmpty && !password.isEmpty
     }
 }

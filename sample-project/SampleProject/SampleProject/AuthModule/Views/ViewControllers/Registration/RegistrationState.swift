@@ -8,5 +8,5 @@
 enum RegistrationState {
     case initial
     case loading
-    case failure(String)
+    case failure
 }

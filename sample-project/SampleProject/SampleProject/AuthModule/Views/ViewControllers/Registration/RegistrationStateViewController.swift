@@ -7,6 +7,11 @@
 
 import UIKit
 
+protocol RegistrationStateViewControllerDelegate: AnyObject {
+    func registerButtonPressed(username: String, password: String)
+    func errorOccured()
+}
+
 class RegistrationStateViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -18,6 +23,8 @@ class RegistrationStateViewController: UIViewController {
     
     private let viewModel = RegisterViewModel()
     
+    weak var delegate: RegistrationStateViewControllerDelegate?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,9 +35,24 @@ class RegistrationStateViewController: UIViewController {
         confirmPasswordTextField.placeholder = viewModel.confirmPasswordPlaceholder
         
         registerButton.setTitle(viewModel.registerButtonTitle, for: .normal)
+        
+        viewModel.delegate = self
     }
     
     @IBAction func onRegisterButtonPressed(_ sender: Any) {
-        
+        viewModel.username = usernameTextField.text
+        viewModel.password = passwordTextField.text
+        viewModel.confirmPassword = confirmPasswordTextField.text
+        viewModel.register()
+    }
+}
+
+extension RegistrationStateViewController: RegisterViewModelDelegate {
+    func validationSuccess(username: String, password: String) {
+        delegate?.registerButtonPressed(username: username, password: password)
+    }
+    
+    func validationFailed() {
+        delegate?.errorOccured()
     }
 }

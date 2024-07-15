@@ -8,8 +8,9 @@
 import UIKit
 
 protocol LoginStateViewControllerDelegate: AnyObject {
-    func loginButtonPressed(username: String?, password: String?)
+    func loginButtonPressed(username: String, password: String)
     func registerButtonPressed()
+    func errorOccured()
 }
 
 class LoginStateViewController: UIViewController {
@@ -35,13 +36,27 @@ class LoginStateViewController: UIViewController {
         
         loginButton.setTitle(viewModel.loginButtonTitle, for: .normal)
         registerButton.setTitle(viewModel.registerButtonTitle, for: .normal)
+        
+        viewModel.delegate = self
     }
 
     @IBAction func onLoginButtonPressed(_ sender: Any) {
-        delegate?.loginButtonPressed(username: usernameTextField.text, password: passwordTextField.text)
+        viewModel.username = usernameTextField.text
+        viewModel.password = passwordTextField.text
+        viewModel.login()
     }
       
     @IBAction func onRegisterButtonPressed(_ sender: Any) {
         delegate?.registerButtonPressed()
+    }
+}
+
+extension LoginStateViewController: LoginViewModelDelegate {
+    func validationSuccess(username: String, password: String) {
+        delegate?.loginButtonPressed(username: username, password: password)
+    }
+    
+    func validationFailed() {
+        delegate?.errorOccured()
     }
 }

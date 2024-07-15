@@ -1,5 +1,5 @@
 //
-//  LoginViewController.swift
+//  RegistrationViewController.swift
 //  SampleProject
 //
 //  Created by Denis Svichkarev on 29/06/24.
@@ -8,16 +8,11 @@
 import UIKit
 import Combine
 
-protocol LoginViewControllerDelegate: AnyObject {
-    func didTapRegisterButton()
-}
-
-class LoginViewController: UIViewController {
+class RegistrationViewController: UIViewController {
     var userViewModel: UserViewModel?
-    weak var delegate: LoginViewControllerDelegate?
     var cancellables = Set<AnyCancellable>()
     
-    var loginStateViewController: LoginStateViewController!
+    var registrationStateViewController: RegistrationStateViewController!
     var loadingStateViewController: LoadingStateViewController!
     var failureStateViewController: FailureStateViewController!
    
@@ -41,22 +36,22 @@ class LoginViewController: UIViewController {
         
         let storyboard = UIStoryboard(name: "AuthStoryboard", bundle: nil)
         
-        loginStateViewController = storyboard.instantiateViewController(withIdentifier: "LoginStateViewController") as? LoginStateViewController
+        registrationStateViewController = storyboard.instantiateViewController(withIdentifier: "RegistrationStateViewController") as? RegistrationStateViewController
         loadingStateViewController = storyboard.instantiateViewController(withIdentifier: "LoadingStateViewController") as? LoadingStateViewController
         failureStateViewController = storyboard.instantiateViewController(withIdentifier: "FailureStateViewController") as? FailureStateViewController
  
-        loginStateViewController.delegate = self
+        registrationStateViewController.delegate = self
         failureStateViewController.delegate = self
         
-        add(childViewController: loginStateViewController)
+        add(childViewController: registrationStateViewController)
     }
     
     private func updateViewState() {
         switch currentState {
         case .initial:
-            replace(oldChildViewController: failureStateViewController, with: loginStateViewController)
+            replace(oldChildViewController: failureStateViewController, with: registrationStateViewController)
         case .loading:
-            replace(oldChildViewController: loginStateViewController, with: loadingStateViewController)
+            replace(oldChildViewController: registrationStateViewController, with: loadingStateViewController)
         case .failure:
             replace(oldChildViewController: loadingStateViewController, with: failureStateViewController)
         }
@@ -67,14 +62,10 @@ class LoginViewController: UIViewController {
     }
 }
 
-extension LoginViewController: LoginStateViewControllerDelegate {
-    func loginButtonPressed(username: String, password: String) {
+extension RegistrationViewController: RegistrationStateViewControllerDelegate {
+    func registerButtonPressed(username: String, password: String) {
         currentState = .loading
         userViewModel?.saveUser(username: username, password: password)
-    }
-    
-    func registerButtonPressed() {
-        delegate?.didTapRegisterButton()
     }
     
     func errorOccured() {
@@ -82,8 +73,9 @@ extension LoginViewController: LoginStateViewControllerDelegate {
     }
 }
 
-extension LoginViewController: FailureStateViewControllerDelegate {
+extension RegistrationViewController: FailureStateViewControllerDelegate {
     func tryAgainButtonPressed() {
         currentState = .initial
     }
 }
+

@@ -9,9 +9,9 @@ import UIKit
 
 class AuthCoordinator: Coordinator {
     var window: UIWindow
+    var navigationVC: UINavigationController!
     var userViewModel: UserViewModel
-    var loginVC: LoginViewController!
-
+  
     let userService: UserService = MockUserService()
     
     init(window: UIWindow, userViewModel: UserViewModel) {
@@ -20,7 +20,20 @@ class AuthCoordinator: Coordinator {
     }
 
     override func start() {
-        loginVC = LoginViewController(userViewModel: userViewModel)
-        self.window.rootViewController = UINavigationController(rootViewController: loginVC)
+        let loginVC = LoginViewController(userViewModel: userViewModel)
+        loginVC.delegate = self
+        navigationVC = UINavigationController(rootViewController: loginVC)
+        self.window.rootViewController = navigationVC
+    }
+    
+    private func showRegistration() {
+        let registrationVC = RegistrationViewController(userViewModel: userViewModel)
+        navigationVC.pushViewController(registrationVC, animated: true)
+    }
+}
+
+extension AuthCoordinator: LoginViewControllerDelegate {
+    func didTapRegisterButton() {
+        showRegistration()
     }
 }

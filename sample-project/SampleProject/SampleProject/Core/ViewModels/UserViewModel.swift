@@ -9,12 +9,9 @@ import Combine
 
 class UserViewModel {
     private let userService: UserService
-    
-    @Published var user: User? = nil
-    @Published var inputError: Bool = false
-       
     private var cancellables = Set<AnyCancellable>()
 
+    @Published var user: User? = nil
     var userDidChange: ((User?) -> Void)?
 
     init(userService: UserService) {
@@ -27,15 +24,7 @@ class UserViewModel {
         }
     }
 
-    func saveUser(username: String?, password: String?) {
-        guard let username = username, !username.isEmpty,
-                let password = password, !password.isEmpty else {
-            inputError = true
-            return
-        }
-        
-        inputError = false
-        
+    func saveUser(username: String, password: String) {
         let user = User(username: username, password: password)
         userService.saveUser(user) { [weak self] success in
             if success {
@@ -49,9 +38,5 @@ class UserViewModel {
     func clearUser() {
         userService.clearUser()
         user = nil
-    }
-    
-    deinit {
-        cancellables.forEach { $0.cancel() }
     }
 }
