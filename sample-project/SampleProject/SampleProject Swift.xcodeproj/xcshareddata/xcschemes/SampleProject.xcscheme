@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2502C2E42C2FF8F9007089D4"
-               BuildableName = "SampleProject.app"
-               BlueprintName = "SampleProject"
-               ReferencedContainer = "container:SampleProject.xcodeproj">
+               BuildableName = "SampleProject Swift.app"
+               BlueprintName = "SampleProject Swift"
+               ReferencedContainer = "container:SampleProject Swift.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,9 +35,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2502C2FD2C2FF8FB007089D4"
-               BuildableName = "SampleProjectTests.xctest"
-               BlueprintName = "SampleProjectTests"
-               ReferencedContainer = "container:SampleProject.xcodeproj">
+               BuildableName = "SampleProject SwiftTests.xctest"
+               BlueprintName = "SampleProject SwiftTests"
+               ReferencedContainer = "container:SampleProject Swift.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -46,9 +46,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2502C3072C2FF8FB007089D4"
-               BuildableName = "SampleProjectUITests.xctest"
-               BlueprintName = "SampleProjectUITests"
-               ReferencedContainer = "container:SampleProject.xcodeproj">
+               BuildableName = "SampleProject SwiftUITests.xctest"
+               BlueprintName = "SampleProject SwiftUITests"
+               ReferencedContainer = "container:SampleProject Swift.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -68,9 +68,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2502C2E42C2FF8F9007089D4"
-            BuildableName = "SampleProject.app"
-            BlueprintName = "SampleProject"
-            ReferencedContainer = "container:SampleProject.xcodeproj">
+            BuildableName = "SampleProject Swift.app"
+            BlueprintName = "SampleProject Swift"
+            ReferencedContainer = "container:SampleProject Swift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -85,9 +85,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2502C2E42C2FF8F9007089D4"
-            BuildableName = "SampleProject.app"
-            BlueprintName = "SampleProject"
-            ReferencedContainer = "container:SampleProject.xcodeproj">
+            BuildableName = "SampleProject Swift.app"
+            BlueprintName = "SampleProject Swift"
+            ReferencedContainer = "container:SampleProject Swift.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
