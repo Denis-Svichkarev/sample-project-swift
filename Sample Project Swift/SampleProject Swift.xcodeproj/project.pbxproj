@@ -23,6 +23,9 @@
 		2502C33E2C309E7E007089D4 /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502C33D2C309E7E007089D4 /* HomeCoordinator.swift */; };
 		2502C3402C315CC2007089D4 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2502C33F2C315CC2007089D4 /* LoadingViewController.swift */; };
 		25130C3F2C42D03B00DC62D2 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25130C3E2C42D03B00DC62D2 /* HomeViewController.swift */; };
+		2575F75E2C7A710400263F70 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2575F75D2C7A710400263F70 /* MyClass.swift */; };
+		2575F7632C7A713000263F70 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2575F7612C7A713000263F70 /* TestViewController.swift */; };
+		2575F7642C7A713000263F70 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2575F7622C7A713000263F70 /* TestViewController.xib */; };
 		259F60872C396C18007F1F67 /* FirebaseUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F60862C396C18007F1F67 /* FirebaseUserService.swift */; };
 		259F60892C396C36007F1F67 /* FriendFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F60882C396C36007F1F67 /* FriendFetchingService.swift */; };
 		259F608B2C396C43007F1F67 /* PostFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F608A2C396C43007F1F67 /* PostFetchingService.swift */; };
@@ -95,6 +98,9 @@
 		2502C33D2C309E7E007089D4 /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
 		2502C33F2C315CC2007089D4 /* LoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewController.swift; sourceTree = "<group>"; };
 		25130C3E2C42D03B00DC62D2 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		2575F75D2C7A710400263F70 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
+		2575F7612C7A713000263F70 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		2575F7622C7A713000263F70 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		259F60862C396C18007F1F67 /* FirebaseUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserService.swift; sourceTree = "<group>"; };
 		259F60882C396C36007F1F67 /* FriendFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFetchingService.swift; sourceTree = "<group>"; };
 		259F608A2C396C43007F1F67 /* PostFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFetchingService.swift; sourceTree = "<group>"; };
@@ -183,6 +189,7 @@
 				25A4B43D2C41964E0052157F /* Core */,
 				25A4B4372C4194DD0052157F /* AuthModule */,
 				25A4B4382C4194EA0052157F /* HomeModule */,
+				2575F75C2C7A707C00263F70 /* Tests */,
 				25A4B4302C3AE23B0052157F /* Extensions */,
 				2502C3222C2FFAE1007089D4 /* Resources */,
 				25A4B4152C3AC4A10052157F /* SupportingFiles */,
@@ -301,6 +308,32 @@
 				25DE86522C43EE8700A5EADC /* LoadingViewController.xib */,
 			);
 			path = XIBs;
+			sourceTree = "<group>";
+		};
+		2575F75C2C7A707C00263F70 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				2575F75F2C7A711300263F70 /* Models */,
+				2575F7602C7A711800263F70 /* Views */,
+				25C31E4E2C7A719100C7980E /* XIBs */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
+		2575F75F2C7A711300263F70 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2575F75D2C7A710400263F70 /* MyClass.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		2575F7602C7A711800263F70 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2575F7612C7A713000263F70 /* TestViewController.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		259F60902C3970E5007F1F67 /* User */ = {
@@ -485,6 +518,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		25C31E4E2C7A719100C7980E /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				2575F7622C7A713000263F70 /* TestViewController.xib */,
+			);
+			path = XIBs;
+			sourceTree = "<group>";
+		};
 		25DE862D2C43D81200A5EADC /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -645,6 +686,7 @@
 				25DE86482C43ECEE00A5EADC /* SwiftUILocalizable.xcstrings in Resources */,
 				2502C2F52C2FF8FB007089D4 /* Assets.xcassets in Resources */,
 				25DE86532C43EE8E00A5EADC /* AuthStoryboard.storyboard in Resources */,
+				2575F7642C7A713000263F70 /* TestViewController.xib in Resources */,
 				25DE86512C43EE8700A5EADC /* LoadingViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -678,7 +720,9 @@
 				25DE865A2C43F16900A5EADC /* AuthLoadingViewModel.swift in Sources */,
 				259F608B2C396C43007F1F67 /* PostFetchingService.swift in Sources */,
 				2502C2E92C2FF8F9007089D4 /* AppDelegate.swift in Sources */,
+				2575F75E2C7A710400263F70 /* MyClass.swift in Sources */,
 				25DE86582C43F15700A5EADC /* RegisterViewModel.swift in Sources */,
+				2575F7632C7A713000263F70 /* TestViewController.swift in Sources */,
 				2502C32A2C301C9C007089D4 /* UserViewModel.swift in Sources */,
 				2502C2EB2C2FF8F9007089D4 /* SceneDelegate.swift in Sources */,
 				259F60A52C397EA4007F1F67 /* HomeViewModel.swift in Sources */,

@@ -16,7 +16,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         self.window = window
     
-        coreCoordinator = CoreCoordinator(window: window)
-        coreCoordinator?.start()
+        self.window?.rootViewController = UINavigationController(rootViewController: TestViewController(nibName: "TestViewController", bundle: nil))
+        self.window?.makeKeyAndVisible()
+        
+//        coreCoordinator = CoreCoordinator(window: window)
+//        coreCoordinator?.start()
     }
 }
