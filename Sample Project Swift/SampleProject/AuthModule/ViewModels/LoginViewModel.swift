@@ -13,18 +13,16 @@ protocol LoginViewModelDelegate: AnyObject {
 }
 
 class LoginViewModel {
-    private let localizationService: LocalizableService
+    private let localizationService: LocalizableServiceProtocol
     
     var username: String?
     var password: String?
     
     weak var delegate: LoginViewModelDelegate?
        
-    init(localizationService: LocalizableService = .shared) {
+    init(localizationService: LocalizableServiceProtocol) {
         self.localizationService = localizationService
     }
-    
-    // TODO: - refactor localization part
     
     var screenTitle: String {
         return localizationService.localizedString(forKey: "login_screen_title", tableName: "AuthLocalizable")

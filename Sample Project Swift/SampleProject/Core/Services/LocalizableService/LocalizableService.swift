@@ -7,11 +7,12 @@
 
 import Foundation
 
-class LocalizableService {
-    static let shared = LocalizableService()
-    
-    private init() {}
-    
+protocol LocalizableServiceProtocol {
+    func localizedString(forKey key: String) -> String
+    func localizedString(forKey key: String, tableName: String) -> String
+}
+
+class LocalizableService: LocalizableServiceProtocol {
     func localizedString(forKey key: String) -> String {
         return NSLocalizedString(key, comment: "")
     }

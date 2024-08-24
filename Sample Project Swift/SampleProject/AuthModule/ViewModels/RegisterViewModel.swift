@@ -13,7 +13,7 @@ protocol RegisterViewModelDelegate: AnyObject {
 }
 
 class RegisterViewModel {
-    private let localizationService: LocalizableService
+    private let localizationService: LocalizableServiceProtocol
     
     var username: String?
     var password: String?
@@ -21,11 +21,9 @@ class RegisterViewModel {
     
     weak var delegate: RegisterViewModelDelegate?
      
-    init(localizationService: LocalizableService = .shared) {
+    init(localizationService: LocalizableServiceProtocol) {
         self.localizationService = localizationService
     }
-    
-    // TODO: - refactor localization part
     
     var screenTitle: String {
         return localizationService.localizedString(forKey: "registration_screen_title", tableName: "AuthLocalizable")

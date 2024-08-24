@@ -21,7 +21,7 @@ class RegistrationStateViewController: UIViewController {
     
     @IBOutlet weak var registerButton: UIButton!
     
-    private let viewModel = RegisterViewModel()
+    private let viewModel = RegisterViewModel(localizationService: LocalizableService())
     
     weak var delegate: RegistrationStateViewControllerDelegate?
     

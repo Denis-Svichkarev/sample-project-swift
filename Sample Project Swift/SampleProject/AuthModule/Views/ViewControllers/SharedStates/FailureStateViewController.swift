@@ -15,7 +15,7 @@ class FailureStateViewController: UIViewController {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var tryAgainButton: UIButton!
     
-    private let viewModel = AuthFailureViewModel()
+    private let viewModel = AuthFailureViewModel(localizationService: LocalizableService())
     
     weak var delegate: FailureStateViewControllerDelegate?
     

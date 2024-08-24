@@ -22,7 +22,7 @@ class LoginStateViewController: UIViewController {
     @IBOutlet weak var loginButton: UIButton!
     @IBOutlet weak var registerButton: UIButton!
     
-    private let viewModel = LoginViewModel()
+    private let viewModel = LoginViewModel(localizationService: LocalizableService())
     
     weak var delegate: LoginStateViewControllerDelegate?
     

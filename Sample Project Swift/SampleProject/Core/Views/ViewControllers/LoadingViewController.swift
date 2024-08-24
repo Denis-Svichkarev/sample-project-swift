@@ -10,7 +10,7 @@ import UIKit
 class LoadingViewController: UIViewController {
     @IBOutlet weak var loadingLabel: UILabel!
     
-    private let viewModel = LoadingViewModel()
+    private let viewModel = LoadingViewModel(localizationService: LocalizableService())
     
     override func viewDidLoad() {
         super.viewDidLoad()

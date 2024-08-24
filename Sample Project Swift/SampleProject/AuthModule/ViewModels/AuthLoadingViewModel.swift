@@ -8,9 +8,9 @@
 import Foundation
 
 class AuthLoadingViewModel {
-    private let localizationService: LocalizableService
+    private let localizationService: LocalizableServiceProtocol
     
-    init(localizationService: LocalizableService = .shared) {
+    init(localizationService: LocalizableServiceProtocol) {
         self.localizationService = localizationService
     }
     
