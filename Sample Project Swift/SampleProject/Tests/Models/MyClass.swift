@@ -8,7 +8,6 @@
 import UIKit
 
 class MyClass {
-
     var name: String
     
     /// Failable Initializer

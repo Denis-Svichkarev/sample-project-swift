@@ -11,8 +11,12 @@ class TestViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        /// Example of using classes 
+        
+        testObjectReferences()
+    }
+    
+    func testInitializers() {
+        /// Example of using classes
         
         let myObject = MyClass(name: "James")
         let myObject2 = myObject
@@ -38,5 +42,23 @@ class TestViewController: UIViewController {
         
         print(array1)
         print(array2)
+    }
+    
+    func testGettersAndSetters() {
+        let person = Person(firstName: "John", lastName: "Smith", age: 20)
+        person.age = 30
+        person.greet()
+        
+        print(person.fullName)
+    }
+    
+    func testObjectReferences() {
+        var person: Person? = Person(firstName: "John", lastName: "Smith", age: 20)
+        let pet = Animal(name: "Charlie", owner: person!)
+        person?.pet = pet
+        person = nil
+        
+        /// Leads to crash
+        /// print(pet.owner.firstName)
     }
 }
