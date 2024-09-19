@@ -12,13 +12,13 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testObjectReferences()
+        testAsyncSequence()
         
         // + async / await
-        // Task и TaskGroup
-        // Actors
-        // Structured Concurrency
-        // AsyncSequence
+        // + Task и TaskGroup
+        // + Actors
+        // + Structured Concurrency
+        // + AsyncSequence
         
         // Improved Result Type
         // Opaque Types (some)
@@ -27,10 +27,6 @@ class TestViewController: UIViewController {
         // Variadic Parameters
         // Objective-C Style Selectors
         // @autoclosure для assert и других проверок
-    }
-    
-    func test() {
-        
     }
     
     func testInitializers() {
