@@ -39,3 +39,49 @@ func testStructuredConcurrency() {
         await fetchDataFromMultipleSources()
     }
 }
+
+// -----
+
+enum NetworkError: Error {
+    case badURL
+    case requestFailed
+    case unknown
+}
+
+func fetchData(from urlString: String) -> Result<String, NetworkError> {
+    guard let url = URL(string: urlString) else {
+        return .failure(.badURL)
+    }
+    
+    print(url)
+
+    let isSuccess = Bool.random()
+    
+    if isSuccess {
+        return .success("Fetched data from \(urlString)")
+    } else {
+        return .failure(.requestFailed)
+    }
+}
+
+func testResultType() {
+    let result = fetchData(from: "https://example.com")
+    
+    let uppercasedResult = result.map { data in
+        data.uppercased()
+    }
+    
+    switch uppercasedResult {
+    case .success(let data):
+        print("Success: \(data)")
+    case .failure(let error):
+        switch error {
+        case .badURL:
+            print("Failure: Invalid URL.")
+        case .requestFailed:
+            print("Failure: Request failed.")
+        case .unknown:
+            print("Failure: Unknown error.")
+        }
+    }
+}

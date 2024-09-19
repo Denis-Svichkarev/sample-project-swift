@@ -12,15 +12,8 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testAsyncSequence()
+        testResultType()
         
-        // + async / await
-        // + Task и TaskGroup
-        // + Actors
-        // + Structured Concurrency
-        // + AsyncSequence
-        
-        // Improved Result Type
         // Opaque Types (some)
         // Existential Any
         // Primary Associated Types
@@ -74,5 +67,30 @@ class TestViewController: UIViewController {
         
         /// Leads to crash
         /// print(pet.owner.firstName)
+    }
+    
+    func testMaps() {
+        let numbers = [1, 2, 3, 4, 5]
+        let squaredNumbers = numbers.map { $0 * 2 }
+
+        print(squaredNumbers)
+        
+        let number: Int? = 5
+        let result = number.map { $0 * 2 }
+
+        print(result ?? "nil")
+    }
+    
+    func testFlatMaps() {
+        let array = [[1, 2, 3], [4, 5, 6]]
+        let flatArray = array.flatMap { $0 }
+
+        print(flatArray)
+        
+        let number: Int? = 5
+        let result = number.flatMap { Optional($0 * 2) }
+
+        // With flatMap the result is Optional(10), not Optional(Optional(10))
+        print(result ?? "nil")
     }
 }
