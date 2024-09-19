@@ -28,17 +28,21 @@ class CoreCoordinator: Coordinator {
         self.window.rootViewController = loadingViewController
         self.window.makeKeyAndVisible()
         
-        userViewModel.fetchCurrentUser()
+        Task {
+            await userViewModel.fetchCurrentUser()
+        }
     }
     
     private func bindViewModel() {
         userViewModel.$user
             .sink { [weak self] user in
                 guard let self = self else { return }
-                if user != nil {
-                    self.showHome()
-                } else {
-                    self.showAuth()
+                DispatchQueue.main.async {
+                    if user != nil {
+                        self.showHome()
+                    } else {
+                        self.showAuth()
+                    }
                 }
             }
             .store(in: &cancellables)

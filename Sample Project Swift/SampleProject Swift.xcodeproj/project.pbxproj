@@ -46,6 +46,12 @@
 		25A4B4322C3AE2590052157F /* UIViewController+ChildManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B4312C3AE2590052157F /* UIViewController+ChildManagement.swift */; };
 		25A4B4342C3AF1240052157F /* CoreCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B4332C3AF1240052157F /* CoreCoordinator.swift */; };
 		25A4B4362C3F12FE0052157F /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25A4B4352C3F12FE0052157F /* Coordinator.swift */; };
+		25AFBB402C9C64CC0036EA70 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFBB3F2C9C64CC0036EA70 /* Counter.swift */; };
+		25AFBB422C9C66200036EA70 /* DataServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFBB412C9C66200036EA70 /* DataServiceTest.swift */; };
+		25AFBB442C9C68910036EA70 /* AsyncCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFBB432C9C68910036EA70 /* AsyncCounter.swift */; };
+		25C31E502C7B4F7700C7980E /* MyStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C31E4F2C7B4F7700C7980E /* MyStruct.swift */; };
+		25C31E532C7B92ED00C7980E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C31E522C7B92ED00C7980E /* Person.swift */; };
+		25C31E582C7D1A9700C7980E /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C31E572C7D1A9600C7980E /* Animal.swift */; };
 		25DE86312C43DACC00A5EADC /* LocalizableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DE86302C43DACC00A5EADC /* LocalizableService.swift */; };
 		25DE86342C43DAFA00A5EADC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DE86332C43DAFA00A5EADC /* LoginViewModel.swift */; };
 		25DE86422C43E14700A5EADC /* LoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DE86412C43E14700A5EADC /* LoadingViewModel.swift */; };
@@ -121,6 +127,12 @@
 		25A4B4312C3AE2590052157F /* UIViewController+ChildManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+ChildManagement.swift"; sourceTree = "<group>"; };
 		25A4B4332C3AF1240052157F /* CoreCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreCoordinator.swift; sourceTree = "<group>"; };
 		25A4B4352C3F12FE0052157F /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		25AFBB3F2C9C64CC0036EA70 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
+		25AFBB412C9C66200036EA70 /* DataServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServiceTest.swift; sourceTree = "<group>"; };
+		25AFBB432C9C68910036EA70 /* AsyncCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCounter.swift; sourceTree = "<group>"; };
+		25C31E4F2C7B4F7700C7980E /* MyStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStruct.swift; sourceTree = "<group>"; };
+		25C31E522C7B92ED00C7980E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		25C31E572C7D1A9600C7980E /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		25DE86302C43DACC00A5EADC /* LocalizableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableService.swift; sourceTree = "<group>"; };
 		25DE86332C43DAFA00A5EADC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		25DE86412C43E14700A5EADC /* LoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewModel.swift; sourceTree = "<group>"; };
@@ -192,7 +204,6 @@
 				2575F75C2C7A707C00263F70 /* Tests */,
 				25A4B4302C3AE23B0052157F /* Extensions */,
 				2502C3222C2FFAE1007089D4 /* Resources */,
-				25A4B4152C3AC4A10052157F /* SupportingFiles */,
 			);
 			path = SampleProject;
 			sourceTree = "<group>";
@@ -324,6 +335,12 @@
 			isa = PBXGroup;
 			children = (
 				2575F75D2C7A710400263F70 /* MyClass.swift */,
+				25C31E4F2C7B4F7700C7980E /* MyStruct.swift */,
+				25C31E522C7B92ED00C7980E /* Person.swift */,
+				25C31E572C7D1A9600C7980E /* Animal.swift */,
+				25AFBB3F2C9C64CC0036EA70 /* Counter.swift */,
+				25AFBB412C9C66200036EA70 /* DataServiceTest.swift */,
+				25AFBB432C9C68910036EA70 /* AsyncCounter.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -364,13 +381,6 @@
 				259F60952C39718B007F1F67 /* FirebasePostService.swift */,
 			);
 			path = Post;
-			sourceTree = "<group>";
-		};
-		25A4B4152C3AC4A10052157F /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		25A4B4162C3AC5720052157F /* Backend */ = {
@@ -730,11 +740,14 @@
 				25DE865C2C43F17800A5EADC /* AuthFailureViewModel.swift in Sources */,
 				25A4B41F2C3AD0F80052157F /* LoadingStateViewController.swift in Sources */,
 				25A4B4292C3AD25A0052157F /* RegistrationState.swift in Sources */,
+				25C31E532C7B92ED00C7980E /* Person.swift in Sources */,
 				25A4B4342C3AF1240052157F /* CoreCoordinator.swift in Sources */,
 				2502C32C2C301CEE007089D4 /* AuthCoordinator.swift in Sources */,
 				25A4B41A2C3ACDD60052157F /* LoginState.swift in Sources */,
 				25A4B4362C3F12FE0052157F /* Coordinator.swift in Sources */,
 				259F60892C396C36007F1F67 /* FriendFetchingService.swift in Sources */,
+				25AFBB422C9C66200036EA70 /* DataServiceTest.swift in Sources */,
+				25AFBB402C9C64CC0036EA70 /* Counter.swift in Sources */,
 				2502C33E2C309E7E007089D4 /* HomeCoordinator.swift in Sources */,
 				2502C3282C301C7E007089D4 /* User.swift in Sources */,
 				25A4B4322C3AE2590052157F /* UIViewController+ChildManagement.swift in Sources */,
@@ -745,9 +758,12 @@
 				259F608D2C396CAE007F1F67 /* MockUserService.swift in Sources */,
 				2502C2F32C2FF8F9007089D4 /* SampleProject.xcdatamodeld in Sources */,
 				259F60982C397265007F1F67 /* MockFriendService.swift in Sources */,
+				25C31E502C7B4F7700C7980E /* MyStruct.swift in Sources */,
+				25AFBB442C9C68910036EA70 /* AsyncCounter.swift in Sources */,
 				25DE86422C43E14700A5EADC /* LoadingViewModel.swift in Sources */,
 				259F608F2C396D4A007F1F67 /* Post.swift in Sources */,
 				25130C3F2C42D03B00DC62D2 /* HomeViewController.swift in Sources */,
+				25C31E582C7D1A9700C7980E /* Animal.swift in Sources */,
 				2502C3402C315CC2007089D4 /* LoadingViewController.swift in Sources */,
 				25A4B42D2C3AD8ED0052157F /* LoginStateViewController.swift in Sources */,
 				2502C3372C3098CD007089D4 /* UserService.swift in Sources */,

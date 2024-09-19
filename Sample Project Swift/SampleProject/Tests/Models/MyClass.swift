@@ -7,6 +7,32 @@
 
 import UIKit
 
-class MyClass: NSObject {
-
+class MyClass {
+    var name: String
+    
+    /// Failable Initializer
+//    init?(name: String) {
+//        if name.isEmpty {
+//            return nil
+//        }
+//        self.name = name
+//    }
+    
+    /// Designated Initializer
+    init(name: String) {
+        self.name = name
+    }
+    
+    /// Convenience Initializer
+    convenience init() {
+        self.init(name: "John")
+    }
+    
+    deinit {
+        print("Object deallocated")
+    }
+    
+    func test() {
+        print("Hello \(name)")
+    }
 }

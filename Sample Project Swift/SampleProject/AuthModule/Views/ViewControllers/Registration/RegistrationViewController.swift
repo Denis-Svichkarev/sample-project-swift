@@ -65,7 +65,9 @@ class RegistrationViewController: UIViewController {
 extension RegistrationViewController: RegistrationStateViewControllerDelegate {
     func registerButtonPressed(username: String, password: String) {
         currentState = .loading
-        userViewModel?.saveUser(username: username, password: password)
+        Task {
+            await userViewModel?.saveUser(username: username, password: password)
+        }
     }
     
     func errorOccured() {

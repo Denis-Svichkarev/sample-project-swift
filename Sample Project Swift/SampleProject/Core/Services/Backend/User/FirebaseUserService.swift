@@ -8,16 +8,19 @@
 import Foundation
 
 class FirebaseUserService: UserService {
-    func fetchCurrentUser(completion: @escaping (User?) -> Void) {
+    func fetchCurrentUser() async -> User? {
         // Firebase-specific implementation
+        return nil
     }
 
-    func saveUser(_ user: User, completion: @escaping (Bool) -> Void) {
+    func saveUser(_ user: User) async -> Bool {
         // Firebase-specific implementation
+        return false
     }
     
-    func editUser(_ user: User, completion: @escaping (Bool) -> Void) {
+    func editUser(_ user: User) async -> Bool {
         // Firebase-specific implementation
+        return false
     }
     
     func clearUser() {

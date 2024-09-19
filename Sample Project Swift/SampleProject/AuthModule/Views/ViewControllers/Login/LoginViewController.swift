@@ -70,7 +70,9 @@ class LoginViewController: UIViewController {
 extension LoginViewController: LoginStateViewControllerDelegate {
     func loginButtonPressed(username: String, password: String) {
         currentState = .loading
-        userViewModel?.saveUser(username: username, password: password)
+        Task {
+            await userViewModel?.saveUser(username: username, password: password)
+        }
     }
     
     func registerButtonPressed() {
