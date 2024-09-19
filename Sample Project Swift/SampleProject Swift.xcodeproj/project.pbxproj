@@ -198,7 +198,6 @@
 				2575F75C2C7A707C00263F70 /* Tests */,
 				25A4B4302C3AE23B0052157F /* Extensions */,
 				2502C3222C2FFAE1007089D4 /* Resources */,
-				25A4B4152C3AC4A10052157F /* SupportingFiles */,
 			);
 			path = SampleProject;
 			sourceTree = "<group>";
@@ -373,13 +372,6 @@
 				259F60952C39718B007F1F67 /* FirebasePostService.swift */,
 			);
 			path = Post;
-			sourceTree = "<group>";
-		};
-		25A4B4152C3AC4A10052157F /* SupportingFiles */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 		25A4B4162C3AC5720052157F /* Backend */ = {

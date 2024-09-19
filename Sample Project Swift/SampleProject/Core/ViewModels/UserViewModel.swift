@@ -18,21 +18,14 @@ class UserViewModel {
         self.userService = userService
     }
 
-    func fetchCurrentUser() {
-        userService.fetchCurrentUser { [weak self] user in
-            self?.user = user
-        }
+    func fetchCurrentUser() async {
+        self.user = await userService.fetchCurrentUser()
     }
 
-    func saveUser(username: String, password: String) {
+    func saveUser(username: String, password: String) async {
         let user = User(username: username, password: password)
-        userService.saveUser(user) { [weak self] success in
-            if success {
-                self?.user = user
-            } else {
-                self?.user = nil
-            }
-        }
+        let success = await userService.saveUser(user)
+        self.user = success ? user : nil
     }
 
     func clearUser() {

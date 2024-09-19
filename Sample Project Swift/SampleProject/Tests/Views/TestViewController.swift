@@ -13,6 +13,24 @@ class TestViewController: UIViewController {
         super.viewDidLoad()
         
         testObjectReferences()
+        
+        // + async / await
+        // Task и TaskGroup
+        // Actors
+        // Structured Concurrency
+        // AsyncSequence
+        
+        // Improved Result Type
+        // Opaque Types (some)
+        // Existential Any
+        // Primary Associated Types
+        // Variadic Parameters
+        // Objective-C Style Selectors
+        // @autoclosure для assert и других проверок
+    }
+    
+    func test() {
+        
     }
     
     func testInitializers() {

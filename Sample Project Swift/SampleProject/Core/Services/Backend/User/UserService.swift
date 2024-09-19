@@ -8,12 +8,12 @@
 import Foundation
 
 protocol UserFetchingService {
-    func fetchCurrentUser(completion: @escaping (User?) -> Void)
+    func fetchCurrentUser() async -> User?
 }
 
 protocol UserSavingService {
-    func saveUser(_ user: User, completion: @escaping (Bool) -> Void)
-    func editUser(_ user: User, completion: @escaping (Bool) -> Void)
+    func saveUser(_ user: User) async -> Bool
+    func editUser(_ user: User) async -> Bool
 }
 
 protocol UserClearService {
