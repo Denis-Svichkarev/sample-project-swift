@@ -49,6 +49,9 @@
 		25AFBB402C9C64CC0036EA70 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFBB3F2C9C64CC0036EA70 /* Counter.swift */; };
 		25AFBB422C9C66200036EA70 /* DataServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFBB412C9C66200036EA70 /* DataServiceTest.swift */; };
 		25AFBB442C9C68910036EA70 /* AsyncCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFBB432C9C68910036EA70 /* AsyncCounter.swift */; };
+		25AFBB462C9D5C740036EA70 /* OpaqueTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFBB452C9D5C740036EA70 /* OpaqueTypes.swift */; };
+		25AFBB482C9D679E0036EA70 /* ExistentialAny.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFBB472C9D679D0036EA70 /* ExistentialAny.swift */; };
+		25AFBB4A2C9D6AC40036EA70 /* AssociatedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFBB492C9D6AC40036EA70 /* AssociatedTypes.swift */; };
 		25C31E502C7B4F7700C7980E /* MyStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C31E4F2C7B4F7700C7980E /* MyStruct.swift */; };
 		25C31E532C7B92ED00C7980E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C31E522C7B92ED00C7980E /* Person.swift */; };
 		25C31E582C7D1A9700C7980E /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C31E572C7D1A9600C7980E /* Animal.swift */; };
@@ -130,6 +133,9 @@
 		25AFBB3F2C9C64CC0036EA70 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		25AFBB412C9C66200036EA70 /* DataServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServiceTest.swift; sourceTree = "<group>"; };
 		25AFBB432C9C68910036EA70 /* AsyncCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCounter.swift; sourceTree = "<group>"; };
+		25AFBB452C9D5C740036EA70 /* OpaqueTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpaqueTypes.swift; sourceTree = "<group>"; };
+		25AFBB472C9D679D0036EA70 /* ExistentialAny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistentialAny.swift; sourceTree = "<group>"; };
+		25AFBB492C9D6AC40036EA70 /* AssociatedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedTypes.swift; sourceTree = "<group>"; };
 		25C31E4F2C7B4F7700C7980E /* MyStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStruct.swift; sourceTree = "<group>"; };
 		25C31E522C7B92ED00C7980E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		25C31E572C7D1A9600C7980E /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
@@ -341,6 +347,9 @@
 				25AFBB3F2C9C64CC0036EA70 /* Counter.swift */,
 				25AFBB412C9C66200036EA70 /* DataServiceTest.swift */,
 				25AFBB432C9C68910036EA70 /* AsyncCounter.swift */,
+				25AFBB452C9D5C740036EA70 /* OpaqueTypes.swift */,
+				25AFBB472C9D679D0036EA70 /* ExistentialAny.swift */,
+				25AFBB492C9D6AC40036EA70 /* AssociatedTypes.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -735,6 +744,7 @@
 				2575F7632C7A713000263F70 /* TestViewController.swift in Sources */,
 				2502C32A2C301C9C007089D4 /* UserViewModel.swift in Sources */,
 				2502C2EB2C2FF8F9007089D4 /* SceneDelegate.swift in Sources */,
+				25AFBB462C9D5C740036EA70 /* OpaqueTypes.swift in Sources */,
 				259F60A52C397EA4007F1F67 /* HomeViewModel.swift in Sources */,
 				25A4B4182C3ACACF0052157F /* HomeTabView.swift in Sources */,
 				25DE865C2C43F17800A5EADC /* AuthFailureViewModel.swift in Sources */,
@@ -754,6 +764,7 @@
 				2502C32F2C301D37007089D4 /* LoginViewController.swift in Sources */,
 				259F60942C397167007F1F67 /* FirebaseFriendService.swift in Sources */,
 				25DE86312C43DACC00A5EADC /* LocalizableService.swift in Sources */,
+				25AFBB482C9D679E0036EA70 /* ExistentialAny.swift in Sources */,
 				25DE86342C43DAFA00A5EADC /* LoginViewModel.swift in Sources */,
 				259F608D2C396CAE007F1F67 /* MockUserService.swift in Sources */,
 				2502C2F32C2FF8F9007089D4 /* SampleProject.xcdatamodeld in Sources */,
@@ -768,6 +779,7 @@
 				25A4B42D2C3AD8ED0052157F /* LoginStateViewController.swift in Sources */,
 				2502C3372C3098CD007089D4 /* UserService.swift in Sources */,
 				25A4B42F2C3AD9090052157F /* RegistrationStateViewController.swift in Sources */,
+				25AFBB4A2C9D6AC40036EA70 /* AssociatedTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

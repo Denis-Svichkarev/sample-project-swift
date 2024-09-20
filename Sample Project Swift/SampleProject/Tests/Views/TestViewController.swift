@@ -12,12 +12,8 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testResultType()
+        testReduce()
         
-        // Opaque Types (some)
-        // Existential Any
-        // Primary Associated Types
-        // Variadic Parameters
         // Objective-C Style Selectors
         // @autoclosure для assert и других проверок
     }
@@ -92,5 +88,46 @@ class TestViewController: UIViewController {
 
         // With flatMap the result is Optional(10), not Optional(Optional(10))
         print(result ?? "nil")
+    }
+    
+    func testVariadicParameters() {
+        logMessages("Server started", "User logged in", "Error 404")
+        
+        print(sumOfNumbers(1, 2, 3, 4, 5))
+        print(sumOfNumbers(10, 20))
+    }
+    
+    func logMessages(_ messages: String...) {
+        for message in messages {
+            print("Log: \(message)")
+        }
+    }
+    
+    func sumOfNumbers(_ numbers: Int...) -> Int {
+        var total = 0
+        for number in numbers {
+            total += number
+        }
+        return total
+    }
+    
+    func testReduce() {
+        let numbers = [1, 2, 3, 4, 5]
+        let sum = numbers.reduce(0) { (total, number) in
+            total + number
+        }
+        print(sum)
+        
+        let strings = ["Hello", " ", "World", "!"]
+        let result = strings.reduce("") { (currentString, nextString) in
+            currentString + nextString
+        }
+        print(result)
+        
+        let numbers2 = [3, 5, 1, 8, 2]
+        let maxNumber = numbers2.reduce(numbers2[0]) { (currentMax, number) in
+            return max(currentMax, number)
+        }
+        print(maxNumber)
     }
 }
