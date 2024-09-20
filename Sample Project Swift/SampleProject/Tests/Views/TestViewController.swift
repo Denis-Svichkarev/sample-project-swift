@@ -12,7 +12,7 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testSelectors()
+        testCompactMaps()
     }
     
     func testInitializers() {
@@ -84,6 +84,12 @@ class TestViewController: UIViewController {
         print(result ?? "nil")
     }
     
+    func testCompactMaps() {
+        let numbers = ["1", "2", "three", "4"]
+        let validNumbers = numbers.compactMap { Int($0) }
+        print(validNumbers)
+    }
+    
     func testVariadicParameters() {
         logMessages("Server started", "User logged in", "Error 404")
         
@@ -148,5 +154,25 @@ class TestViewController: UIViewController {
         if condition() {
             print(message)
         }
+    }
+    
+    func testFilter() {
+        let numbers = [1, 6, 3, 8, 4]
+        let filteredNumbers = numbers.filter { $0 > 5 }  // Result: [6, 8]
+        print(filteredNumbers)
+        
+        struct User {
+            let name: String
+            let age: Int
+        }
+
+        let users = [
+            User(name: "John", age: 30),
+            User(name: "Jane", age: 25),
+            User(name: "Tom", age: 20)
+        ]
+
+        let filteredUsers = users.filter { $0.age >= 25 }
+        print(filteredUsers)
     }
 }
