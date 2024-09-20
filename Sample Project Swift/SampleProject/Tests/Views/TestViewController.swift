@@ -12,15 +12,11 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testReduce()
-        
-        // Objective-C Style Selectors
-        // @autoclosure для assert и других проверок
+        testSelectors()
     }
     
     func testInitializers() {
         /// Example of using classes
-        
         let myObject = MyClass(name: "James")
         let myObject2 = myObject
         myObject2.name = "Paul"
@@ -29,7 +25,6 @@ class TestViewController: UIViewController {
         myObject2.test()
         
         /// Example of using structures
-        
         let myStruct = MyStruct(name: "John")
         var myStruct2 = myStruct
         myStruct2.changeName()
@@ -38,7 +33,6 @@ class TestViewController: UIViewController {
         myStruct2.test()
         
         /// Copy-on-write example
-        
         var array1 = [1, 2, 3]
         let array2 = array1
         array1.append(4)
@@ -61,8 +55,8 @@ class TestViewController: UIViewController {
         person?.pet = pet
         person = nil
         
-        /// Leads to crash
-        /// print(pet.owner.firstName)
+        // Leads to crash
+        // print(pet.owner.firstName)
     }
     
     func testMaps() {
@@ -129,5 +123,30 @@ class TestViewController: UIViewController {
             return max(currentMax, number)
         }
         print(maxNumber)
+    }
+    
+    func testSelectors() {
+        // Old style
+        let button = UIButton()
+        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+
+        // New style
+        let button2 = UIButton()
+        button2.addAction(UIAction { _ in
+            print("Button tapped")
+        }, for: .touchUpInside)
+        
+        // @autoclosure example
+        logIfNeeded(5 > 3, message: "Condition is true")
+    }
+    
+    @objc func buttonTapped() {
+        print("Button tapped")
+    }
+    
+    func logIfNeeded(_ condition: @autoclosure () -> Bool, message: String) {
+        if condition() {
+            print(message)
+        }
     }
 }
