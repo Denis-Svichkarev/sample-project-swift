@@ -12,7 +12,7 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testCompactMaps()
+        testDecodable()
     }
     
     func testInitializers() {
@@ -174,5 +174,29 @@ class TestViewController: UIViewController {
 
         let filteredUsers = users.filter { $0.age >= 25 }
         print(filteredUsers)
+    }
+    
+    func testDecodable() {
+        struct User: Decodable {
+            let id: Int
+            let name: String
+            let email: String
+        }
+        
+        let jsonString = """
+        {
+            "id": 1,
+            "name": "John Doe",
+            "email": "john.doe@example.com"
+        }
+        """
+        let jsonData = jsonString.data(using: .utf8)!
+
+        do {
+            let user = try JSONDecoder().decode(User.self, from: jsonData)
+            print(user.name)
+        } catch {
+            print("Error: \(error)")
+        }
     }
 }
