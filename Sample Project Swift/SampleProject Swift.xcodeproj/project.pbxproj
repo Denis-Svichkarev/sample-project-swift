@@ -26,6 +26,8 @@
 		2575F75E2C7A710400263F70 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2575F75D2C7A710400263F70 /* MyClass.swift */; };
 		2575F7632C7A713000263F70 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2575F7612C7A713000263F70 /* TestViewController.swift */; };
 		2575F7642C7A713000263F70 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2575F7622C7A713000263F70 /* TestViewController.xib */; };
+		2587B8DA2CA017E5002CCEC8 /* ComplexCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587B8D92CA017E5002CCEC8 /* ComplexCalculator.swift */; };
+		2587B8DC2CA06771002CCEC8 /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587B8DB2CA06771002CCEC8 /* Generics.swift */; };
 		259F60872C396C18007F1F67 /* FirebaseUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F60862C396C18007F1F67 /* FirebaseUserService.swift */; };
 		259F60892C396C36007F1F67 /* FriendFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F60882C396C36007F1F67 /* FriendFetchingService.swift */; };
 		259F608B2C396C43007F1F67 /* PostFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F608A2C396C43007F1F67 /* PostFetchingService.swift */; };
@@ -110,6 +112,8 @@
 		2575F75D2C7A710400263F70 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
 		2575F7612C7A713000263F70 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2575F7622C7A713000263F70 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		2587B8D92CA017E5002CCEC8 /* ComplexCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexCalculator.swift; sourceTree = "<group>"; };
+		2587B8DB2CA06771002CCEC8 /* Generics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generics.swift; sourceTree = "<group>"; };
 		259F60862C396C18007F1F67 /* FirebaseUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserService.swift; sourceTree = "<group>"; };
 		259F60882C396C36007F1F67 /* FriendFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFetchingService.swift; sourceTree = "<group>"; };
 		259F608A2C396C43007F1F67 /* PostFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFetchingService.swift; sourceTree = "<group>"; };
@@ -350,6 +354,8 @@
 				25AFBB452C9D5C740036EA70 /* OpaqueTypes.swift */,
 				25AFBB472C9D679D0036EA70 /* ExistentialAny.swift */,
 				25AFBB492C9D6AC40036EA70 /* AssociatedTypes.swift */,
+				2587B8D92CA017E5002CCEC8 /* ComplexCalculator.swift */,
+				2587B8DB2CA06771002CCEC8 /* Generics.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -752,6 +758,7 @@
 				25A4B4292C3AD25A0052157F /* RegistrationState.swift in Sources */,
 				25C31E532C7B92ED00C7980E /* Person.swift in Sources */,
 				25A4B4342C3AF1240052157F /* CoreCoordinator.swift in Sources */,
+				2587B8DC2CA06771002CCEC8 /* Generics.swift in Sources */,
 				2502C32C2C301CEE007089D4 /* AuthCoordinator.swift in Sources */,
 				25A4B41A2C3ACDD60052157F /* LoginState.swift in Sources */,
 				25A4B4362C3F12FE0052157F /* Coordinator.swift in Sources */,
@@ -767,6 +774,7 @@
 				25AFBB482C9D679E0036EA70 /* ExistentialAny.swift in Sources */,
 				25DE86342C43DAFA00A5EADC /* LoginViewModel.swift in Sources */,
 				259F608D2C396CAE007F1F67 /* MockUserService.swift in Sources */,
+				2587B8DA2CA017E5002CCEC8 /* ComplexCalculator.swift in Sources */,
 				2502C2F32C2FF8F9007089D4 /* SampleProject.xcdatamodeld in Sources */,
 				259F60982C397265007F1F67 /* MockFriendService.swift in Sources */,
 				25C31E502C7B4F7700C7980E /* MyStruct.swift in Sources */,

@@ -12,7 +12,7 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testTrailingClosure()
+        testGenerics()
     }
     
     func testInitializers() {
@@ -260,5 +260,32 @@ class TestViewController: UIViewController {
         print("Task started")
         completion()
         print("Task completed")
+    }
+    
+    func testLazyVar() {
+        let calculator = ComplexCalculator()
+        print("Calculation not started yet")
+        print("The result is \(calculator.result)")
+    }
+    
+    func testGenerics() {
+        let maxInt = maximum(a: 10, b: 20)
+        let maxDouble = maximum(a: 3.14, b: 2.72)
+        print("\(maxInt), \(maxDouble)")
+        
+        let person = Human(name: "John")
+        let car = Car(model: "Tesla")
+
+        printDescription(item: person) // Person: John
+        printDescription(item: car)    // Car model: Tesla
+        
+        var x = 5
+        var y = 10
+        swapValues(a: &x, b: &y)
+        print("x: \(x), y: \(y)")
+    }
+    
+    func maximum<T: Comparable>(a: T, b: T) -> T {
+        return a > b ? a : b
     }
 }
