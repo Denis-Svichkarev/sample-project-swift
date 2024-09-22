@@ -12,11 +12,11 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testPropertyWrapper()
+        testNestedTypes()
     }
     
     func testInitializers() {
-        /// Example of using classes
+        // Example of using classes
         let myObject = MyClass(name: "James")
         let myObject2 = myObject
         myObject2.name = "Paul"
@@ -24,7 +24,7 @@ class TestViewController: UIViewController {
         myObject.test()
         myObject2.test()
         
-        /// Example of using structures
+        // Example of using structures
         let myStruct = MyStruct(name: "John")
         var myStruct2 = myStruct
         myStruct2.changeName()
@@ -32,7 +32,7 @@ class TestViewController: UIViewController {
         myStruct.test()
         myStruct2.test()
         
-        /// Copy-on-write example
+        // Copy-on-write example
         var array1 = [1, 2, 3]
         let array2 = array1
         array1.append(4)
@@ -295,7 +295,12 @@ class TestViewController: UIViewController {
     }
     
     func testPropertyWrapper() {
-        var user = MyUser(username: "johnDoe")
+        let user = MyUser(username: "johnDoe")
         print(user.username) // "JOHNDOE"
+    }
+    
+    func testNestedTypes() {
+        let address = Person.Address(street: "123 Main St", city: "Anytown")
+        print(address)
     }
 }

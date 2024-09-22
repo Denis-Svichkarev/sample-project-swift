@@ -37,6 +37,11 @@ class Person {
         }
     }
     
+    struct Address {
+        var street: String
+        var city: String
+    }
+    
     init(firstName: String, lastName: String, age: Int) {
         self.firstName = firstName
         self.lastName = lastName
