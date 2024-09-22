@@ -9,6 +9,7 @@ import UIKit
 
 class MyClass {
     var name: String
+    var completion: (() -> Void)?
     
     /// Failable Initializer
 //    init?(name: String) {
@@ -34,5 +35,10 @@ class MyClass {
     
     func test() {
         print("Hello \(name)")
+    }
+    
+    func executeTask() {
+        print("Task is executing")
+        completion?()
     }
 }

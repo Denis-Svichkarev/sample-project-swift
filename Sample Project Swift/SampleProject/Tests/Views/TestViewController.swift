@@ -12,7 +12,7 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testDecodable()
+        testTrailingClosure()
     }
     
     func testInitializers() {
@@ -198,5 +198,67 @@ class TestViewController: UIViewController {
         } catch {
             print("Error: \(error)")
         }
+    }
+    
+    func testSwitch() {
+        let point = (2, 0)
+
+        switch point {
+        case (0, 0):
+            print("Point is at origin")
+            print("End")
+        case (let x, 0):
+            print("Point is on x-axis at \(x)")
+            print("End")
+        case (0, let y):
+            print("Point is on y-axis at \(y)")
+            print("End")
+        case let (x, y):
+            print("Point is at (\(x), \(y))")
+            print("End")
+        }
+    }
+
+    func testClosures() {
+        let simpleClosure = {
+            print("This is a simple closure.")
+        }
+        
+        simpleClosure()
+        
+        fetchData { data in
+            print("Data received: \(data)")
+        }
+        
+        let myObject = MyClass()
+        
+        myObject.completion = {
+            print("Task completed!")
+        }
+
+        myObject.executeTask()
+    }
+    
+    func fetchData(completion: @escaping (String) -> Void) {
+        DispatchQueue.global().asyncAfter(deadline: .now() + 2.0) {
+            let data = "Fetched data"
+            completion(data)
+        }
+    }
+    
+    func testTrailingClosure() {
+        performTask(completion: {
+            print("Task in progress")
+        })
+        
+        performTask {
+            print("Task in progress")
+        }
+    }
+    
+    func performTask(completion: () -> Void) {
+        print("Task started")
+        completion()
+        print("Task completed")
     }
 }
