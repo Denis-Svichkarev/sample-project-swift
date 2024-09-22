@@ -12,7 +12,7 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testGenerics()
+        testPropertyWrapper()
     }
     
     func testInitializers() {
@@ -200,8 +200,8 @@ class TestViewController: UIViewController {
         }
     }
     
-    func testSwitch() {
-        let point = (2, 0)
+    func testSwitch(x: Int, y: Int) {
+        let point = (x, y)
 
         switch point {
         case (0, 0):
@@ -287,5 +287,15 @@ class TestViewController: UIViewController {
     
     func maximum<T: Comparable>(a: T, b: T) -> T {
         return a > b ? a : b
+    }
+    
+    func testClassStaticFunctions() {
+        print(ParentClass.description())
+        print(ChildClass.description())
+    }
+    
+    func testPropertyWrapper() {
+        var user = MyUser(username: "johnDoe")
+        print(user.username) // "JOHNDOE"
     }
 }

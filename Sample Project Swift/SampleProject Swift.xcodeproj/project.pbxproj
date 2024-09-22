@@ -28,6 +28,8 @@
 		2575F7642C7A713000263F70 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2575F7622C7A713000263F70 /* TestViewController.xib */; };
 		2587B8DA2CA017E5002CCEC8 /* ComplexCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587B8D92CA017E5002CCEC8 /* ComplexCalculator.swift */; };
 		2587B8DC2CA06771002CCEC8 /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587B8DB2CA06771002CCEC8 /* Generics.swift */; };
+		2587B8DE2CA06D59002CCEC8 /* StaticMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587B8DD2CA06D58002CCEC8 /* StaticMethods.swift */; };
+		2587B8E42CA096F9002CCEC8 /* PropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587B8E32CA096F9002CCEC8 /* PropertyWrapper.swift */; };
 		259F60872C396C18007F1F67 /* FirebaseUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F60862C396C18007F1F67 /* FirebaseUserService.swift */; };
 		259F60892C396C36007F1F67 /* FriendFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F60882C396C36007F1F67 /* FriendFetchingService.swift */; };
 		259F608B2C396C43007F1F67 /* PostFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F608A2C396C43007F1F67 /* PostFetchingService.swift */; };
@@ -114,6 +116,8 @@
 		2575F7622C7A713000263F70 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		2587B8D92CA017E5002CCEC8 /* ComplexCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexCalculator.swift; sourceTree = "<group>"; };
 		2587B8DB2CA06771002CCEC8 /* Generics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generics.swift; sourceTree = "<group>"; };
+		2587B8DD2CA06D58002CCEC8 /* StaticMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticMethods.swift; sourceTree = "<group>"; };
+		2587B8E32CA096F9002CCEC8 /* PropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapper.swift; sourceTree = "<group>"; };
 		259F60862C396C18007F1F67 /* FirebaseUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserService.swift; sourceTree = "<group>"; };
 		259F60882C396C36007F1F67 /* FriendFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFetchingService.swift; sourceTree = "<group>"; };
 		259F608A2C396C43007F1F67 /* PostFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFetchingService.swift; sourceTree = "<group>"; };
@@ -356,6 +360,8 @@
 				25AFBB492C9D6AC40036EA70 /* AssociatedTypes.swift */,
 				2587B8D92CA017E5002CCEC8 /* ComplexCalculator.swift */,
 				2587B8DB2CA06771002CCEC8 /* Generics.swift */,
+				2587B8DD2CA06D58002CCEC8 /* StaticMethods.swift */,
+				2587B8E32CA096F9002CCEC8 /* PropertyWrapper.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -755,6 +761,7 @@
 				25A4B4182C3ACACF0052157F /* HomeTabView.swift in Sources */,
 				25DE865C2C43F17800A5EADC /* AuthFailureViewModel.swift in Sources */,
 				25A4B41F2C3AD0F80052157F /* LoadingStateViewController.swift in Sources */,
+				2587B8DE2CA06D59002CCEC8 /* StaticMethods.swift in Sources */,
 				25A4B4292C3AD25A0052157F /* RegistrationState.swift in Sources */,
 				25C31E532C7B92ED00C7980E /* Person.swift in Sources */,
 				25A4B4342C3AF1240052157F /* CoreCoordinator.swift in Sources */,
@@ -784,6 +791,7 @@
 				25130C3F2C42D03B00DC62D2 /* HomeViewController.swift in Sources */,
 				25C31E582C7D1A9700C7980E /* Animal.swift in Sources */,
 				2502C3402C315CC2007089D4 /* LoadingViewController.swift in Sources */,
+				2587B8E42CA096F9002CCEC8 /* PropertyWrapper.swift in Sources */,
 				25A4B42D2C3AD8ED0052157F /* LoginStateViewController.swift in Sources */,
 				2502C3372C3098CD007089D4 /* UserService.swift in Sources */,
 				25A4B42F2C3AD9090052157F /* RegistrationStateViewController.swift in Sources */,

@@ -38,3 +38,25 @@ func testAssociatedTypes() {
         print(container.item(at: 0))
     }
 }
+
+// -----
+
+protocol DataProvider {
+    associatedtype DataType
+    func provideData() -> DataType
+}
+
+struct StringDataProvider: DataProvider {
+    typealias DataType = String
+    func provideData() -> String {
+        return "Sample String"
+    }
+}
+
+struct IntDataProvider: DataProvider {
+    typealias DataType = Int
+    func provideData() -> Int {
+        return 123
+    }
+}
+
