@@ -12,7 +12,7 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testNestedTypes()
+        testResultBuilders()
     }
     
     func testInitializers() {
@@ -302,5 +302,21 @@ class TestViewController: UIViewController {
     func testNestedTypes() {
         let address = Person.Address(street: "123 Main St", city: "Anytown")
         print(address)
+    }
+    
+    func testResultBuilders() {
+        let page = buildHTML {
+            "<h1>Hello, world!</h1>"
+            "<p>This is a paragraph.</p>"
+        }
+        
+        print(page)
+        
+        let buttons = createButtons {
+            CustomButton(title: "Save", action: { print("Saving...") })
+            CustomButton(title: "Cancel", action: { print("Cancelled") })
+        }
+        
+        print(buttons)
     }
 }
