@@ -57,6 +57,7 @@
 		25AFBB462C9D5C740036EA70 /* OpaqueTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFBB452C9D5C740036EA70 /* OpaqueTypes.swift */; };
 		25AFBB482C9D679E0036EA70 /* ExistentialAny.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFBB472C9D679D0036EA70 /* ExistentialAny.swift */; };
 		25AFBB4A2C9D6AC40036EA70 /* AssociatedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFBB492C9D6AC40036EA70 /* AssociatedTypes.swift */; };
+		25AFEAF12CA3F6570035307C /* TestEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFEAF02CA3F6570035307C /* TestEnums.swift */; };
 		25C31E502C7B4F7700C7980E /* MyStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C31E4F2C7B4F7700C7980E /* MyStruct.swift */; };
 		25C31E532C7B92ED00C7980E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C31E522C7B92ED00C7980E /* Person.swift */; };
 		25C31E582C7D1A9700C7980E /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C31E572C7D1A9600C7980E /* Animal.swift */; };
@@ -146,6 +147,7 @@
 		25AFBB452C9D5C740036EA70 /* OpaqueTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpaqueTypes.swift; sourceTree = "<group>"; };
 		25AFBB472C9D679D0036EA70 /* ExistentialAny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistentialAny.swift; sourceTree = "<group>"; };
 		25AFBB492C9D6AC40036EA70 /* AssociatedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedTypes.swift; sourceTree = "<group>"; };
+		25AFEAF02CA3F6570035307C /* TestEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEnums.swift; sourceTree = "<group>"; };
 		25C31E4F2C7B4F7700C7980E /* MyStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStruct.swift; sourceTree = "<group>"; };
 		25C31E522C7B92ED00C7980E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		25C31E572C7D1A9600C7980E /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
@@ -365,6 +367,7 @@
 				2587B8DD2CA06D58002CCEC8 /* StaticMethods.swift */,
 				2587B8E32CA096F9002CCEC8 /* PropertyWrapper.swift */,
 				2587B8E52CA2C8C2002CCEC8 /* ResultBuilders.swift */,
+				25AFEAF02CA3F6570035307C /* TestEnums.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -753,6 +756,7 @@
 				25A4B4212C3AD1050052157F /* FailureStateViewController.swift in Sources */,
 				25DE865A2C43F16900A5EADC /* AuthLoadingViewModel.swift in Sources */,
 				259F608B2C396C43007F1F67 /* PostFetchingService.swift in Sources */,
+				25AFEAF12CA3F6570035307C /* TestEnums.swift in Sources */,
 				2502C2E92C2FF8F9007089D4 /* AppDelegate.swift in Sources */,
 				2575F75E2C7A710400263F70 /* MyClass.swift in Sources */,
 				25DE86582C43F15700A5EADC /* RegisterViewModel.swift in Sources */,

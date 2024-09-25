@@ -12,7 +12,7 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testResultBuilders()
+        testDefer()
     }
     
     func testInitializers() {
@@ -318,5 +318,40 @@ class TestViewController: UIViewController {
         }
         
         print(buttons)
+    }
+    
+    func testEnums() {
+        let myDog = TestAnimal.dog(name: "Rex", breed: "Labrador")
+        let myCat = TestAnimal.cat(name: "Whiskers", age: 3)
+
+        switch myDog {
+        case .dog(let name, let breed):
+            print("Dog's name is \(name) and breed is \(breed)")
+        case .cat(let name, let age):
+            print("Cat's name is \(name) and age is \(age)")
+        case .bird(let name, let canFly):
+            print("\(name) can fly: \(canFly)")
+        }
+    }
+    
+    func testDefer() {
+        print("Open file...")
+        
+        defer {
+            print("Close file 2.")
+        }
+        
+        defer {
+            print("Close file 1.")
+        }
+
+        print("Read data from file...")
+        
+        if true {
+            print("Error occurred.")
+            return
+        }
+        
+        print("Success.")
     }
 }
