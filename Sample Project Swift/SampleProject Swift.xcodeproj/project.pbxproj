@@ -26,6 +26,11 @@
 		2575F75E2C7A710400263F70 /* MyClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2575F75D2C7A710400263F70 /* MyClass.swift */; };
 		2575F7632C7A713000263F70 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2575F7612C7A713000263F70 /* TestViewController.swift */; };
 		2575F7642C7A713000263F70 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2575F7622C7A713000263F70 /* TestViewController.xib */; };
+		2587B8DA2CA017E5002CCEC8 /* ComplexCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587B8D92CA017E5002CCEC8 /* ComplexCalculator.swift */; };
+		2587B8DC2CA06771002CCEC8 /* Generics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587B8DB2CA06771002CCEC8 /* Generics.swift */; };
+		2587B8DE2CA06D59002CCEC8 /* StaticMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587B8DD2CA06D58002CCEC8 /* StaticMethods.swift */; };
+		2587B8E42CA096F9002CCEC8 /* PropertyWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587B8E32CA096F9002CCEC8 /* PropertyWrapper.swift */; };
+		2587B8E62CA2C8C2002CCEC8 /* ResultBuilders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2587B8E52CA2C8C2002CCEC8 /* ResultBuilders.swift */; };
 		259F60872C396C18007F1F67 /* FirebaseUserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F60862C396C18007F1F67 /* FirebaseUserService.swift */; };
 		259F60892C396C36007F1F67 /* FriendFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F60882C396C36007F1F67 /* FriendFetchingService.swift */; };
 		259F608B2C396C43007F1F67 /* PostFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 259F608A2C396C43007F1F67 /* PostFetchingService.swift */; };
@@ -49,6 +54,10 @@
 		25AFBB402C9C64CC0036EA70 /* Counter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFBB3F2C9C64CC0036EA70 /* Counter.swift */; };
 		25AFBB422C9C66200036EA70 /* DataServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFBB412C9C66200036EA70 /* DataServiceTest.swift */; };
 		25AFBB442C9C68910036EA70 /* AsyncCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFBB432C9C68910036EA70 /* AsyncCounter.swift */; };
+		25AFBB462C9D5C740036EA70 /* OpaqueTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFBB452C9D5C740036EA70 /* OpaqueTypes.swift */; };
+		25AFBB482C9D679E0036EA70 /* ExistentialAny.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFBB472C9D679D0036EA70 /* ExistentialAny.swift */; };
+		25AFBB4A2C9D6AC40036EA70 /* AssociatedTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFBB492C9D6AC40036EA70 /* AssociatedTypes.swift */; };
+		25AFEAF12CA3F6570035307C /* TestEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25AFEAF02CA3F6570035307C /* TestEnums.swift */; };
 		25C31E502C7B4F7700C7980E /* MyStruct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C31E4F2C7B4F7700C7980E /* MyStruct.swift */; };
 		25C31E532C7B92ED00C7980E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C31E522C7B92ED00C7980E /* Person.swift */; };
 		25C31E582C7D1A9700C7980E /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C31E572C7D1A9600C7980E /* Animal.swift */; };
@@ -107,6 +116,11 @@
 		2575F75D2C7A710400263F70 /* MyClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyClass.swift; sourceTree = "<group>"; };
 		2575F7612C7A713000263F70 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2575F7622C7A713000263F70 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		2587B8D92CA017E5002CCEC8 /* ComplexCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplexCalculator.swift; sourceTree = "<group>"; };
+		2587B8DB2CA06771002CCEC8 /* Generics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Generics.swift; sourceTree = "<group>"; };
+		2587B8DD2CA06D58002CCEC8 /* StaticMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticMethods.swift; sourceTree = "<group>"; };
+		2587B8E32CA096F9002CCEC8 /* PropertyWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PropertyWrapper.swift; sourceTree = "<group>"; };
+		2587B8E52CA2C8C2002CCEC8 /* ResultBuilders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultBuilders.swift; sourceTree = "<group>"; };
 		259F60862C396C18007F1F67 /* FirebaseUserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseUserService.swift; sourceTree = "<group>"; };
 		259F60882C396C36007F1F67 /* FriendFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendFetchingService.swift; sourceTree = "<group>"; };
 		259F608A2C396C43007F1F67 /* PostFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostFetchingService.swift; sourceTree = "<group>"; };
@@ -130,6 +144,10 @@
 		25AFBB3F2C9C64CC0036EA70 /* Counter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Counter.swift; sourceTree = "<group>"; };
 		25AFBB412C9C66200036EA70 /* DataServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataServiceTest.swift; sourceTree = "<group>"; };
 		25AFBB432C9C68910036EA70 /* AsyncCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncCounter.swift; sourceTree = "<group>"; };
+		25AFBB452C9D5C740036EA70 /* OpaqueTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpaqueTypes.swift; sourceTree = "<group>"; };
+		25AFBB472C9D679D0036EA70 /* ExistentialAny.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExistentialAny.swift; sourceTree = "<group>"; };
+		25AFBB492C9D6AC40036EA70 /* AssociatedTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssociatedTypes.swift; sourceTree = "<group>"; };
+		25AFEAF02CA3F6570035307C /* TestEnums.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestEnums.swift; sourceTree = "<group>"; };
 		25C31E4F2C7B4F7700C7980E /* MyStruct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyStruct.swift; sourceTree = "<group>"; };
 		25C31E522C7B92ED00C7980E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		25C31E572C7D1A9600C7980E /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
@@ -341,6 +359,15 @@
 				25AFBB3F2C9C64CC0036EA70 /* Counter.swift */,
 				25AFBB412C9C66200036EA70 /* DataServiceTest.swift */,
 				25AFBB432C9C68910036EA70 /* AsyncCounter.swift */,
+				25AFBB452C9D5C740036EA70 /* OpaqueTypes.swift */,
+				25AFBB472C9D679D0036EA70 /* ExistentialAny.swift */,
+				25AFBB492C9D6AC40036EA70 /* AssociatedTypes.swift */,
+				2587B8D92CA017E5002CCEC8 /* ComplexCalculator.swift */,
+				2587B8DB2CA06771002CCEC8 /* Generics.swift */,
+				2587B8DD2CA06D58002CCEC8 /* StaticMethods.swift */,
+				2587B8E32CA096F9002CCEC8 /* PropertyWrapper.swift */,
+				2587B8E52CA2C8C2002CCEC8 /* ResultBuilders.swift */,
+				25AFEAF02CA3F6570035307C /* TestEnums.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -729,22 +756,27 @@
 				25A4B4212C3AD1050052157F /* FailureStateViewController.swift in Sources */,
 				25DE865A2C43F16900A5EADC /* AuthLoadingViewModel.swift in Sources */,
 				259F608B2C396C43007F1F67 /* PostFetchingService.swift in Sources */,
+				25AFEAF12CA3F6570035307C /* TestEnums.swift in Sources */,
 				2502C2E92C2FF8F9007089D4 /* AppDelegate.swift in Sources */,
 				2575F75E2C7A710400263F70 /* MyClass.swift in Sources */,
 				25DE86582C43F15700A5EADC /* RegisterViewModel.swift in Sources */,
 				2575F7632C7A713000263F70 /* TestViewController.swift in Sources */,
 				2502C32A2C301C9C007089D4 /* UserViewModel.swift in Sources */,
 				2502C2EB2C2FF8F9007089D4 /* SceneDelegate.swift in Sources */,
+				25AFBB462C9D5C740036EA70 /* OpaqueTypes.swift in Sources */,
 				259F60A52C397EA4007F1F67 /* HomeViewModel.swift in Sources */,
 				25A4B4182C3ACACF0052157F /* HomeTabView.swift in Sources */,
 				25DE865C2C43F17800A5EADC /* AuthFailureViewModel.swift in Sources */,
 				25A4B41F2C3AD0F80052157F /* LoadingStateViewController.swift in Sources */,
+				2587B8DE2CA06D59002CCEC8 /* StaticMethods.swift in Sources */,
 				25A4B4292C3AD25A0052157F /* RegistrationState.swift in Sources */,
 				25C31E532C7B92ED00C7980E /* Person.swift in Sources */,
 				25A4B4342C3AF1240052157F /* CoreCoordinator.swift in Sources */,
+				2587B8DC2CA06771002CCEC8 /* Generics.swift in Sources */,
 				2502C32C2C301CEE007089D4 /* AuthCoordinator.swift in Sources */,
 				25A4B41A2C3ACDD60052157F /* LoginState.swift in Sources */,
 				25A4B4362C3F12FE0052157F /* Coordinator.swift in Sources */,
+				2587B8E62CA2C8C2002CCEC8 /* ResultBuilders.swift in Sources */,
 				259F60892C396C36007F1F67 /* FriendFetchingService.swift in Sources */,
 				25AFBB422C9C66200036EA70 /* DataServiceTest.swift in Sources */,
 				25AFBB402C9C64CC0036EA70 /* Counter.swift in Sources */,
@@ -754,8 +786,10 @@
 				2502C32F2C301D37007089D4 /* LoginViewController.swift in Sources */,
 				259F60942C397167007F1F67 /* FirebaseFriendService.swift in Sources */,
 				25DE86312C43DACC00A5EADC /* LocalizableService.swift in Sources */,
+				25AFBB482C9D679E0036EA70 /* ExistentialAny.swift in Sources */,
 				25DE86342C43DAFA00A5EADC /* LoginViewModel.swift in Sources */,
 				259F608D2C396CAE007F1F67 /* MockUserService.swift in Sources */,
+				2587B8DA2CA017E5002CCEC8 /* ComplexCalculator.swift in Sources */,
 				2502C2F32C2FF8F9007089D4 /* SampleProject.xcdatamodeld in Sources */,
 				259F60982C397265007F1F67 /* MockFriendService.swift in Sources */,
 				25C31E502C7B4F7700C7980E /* MyStruct.swift in Sources */,
@@ -765,9 +799,11 @@
 				25130C3F2C42D03B00DC62D2 /* HomeViewController.swift in Sources */,
 				25C31E582C7D1A9700C7980E /* Animal.swift in Sources */,
 				2502C3402C315CC2007089D4 /* LoadingViewController.swift in Sources */,
+				2587B8E42CA096F9002CCEC8 /* PropertyWrapper.swift in Sources */,
 				25A4B42D2C3AD8ED0052157F /* LoginStateViewController.swift in Sources */,
 				2502C3372C3098CD007089D4 /* UserService.swift in Sources */,
 				25A4B42F2C3AD9090052157F /* RegistrationStateViewController.swift in Sources */,
+				25AFBB4A2C9D6AC40036EA70 /* AssociatedTypes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -878,7 +914,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -936,7 +972,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -960,7 +996,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -988,7 +1024,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
