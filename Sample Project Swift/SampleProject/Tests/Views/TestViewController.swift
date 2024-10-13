@@ -12,8 +12,50 @@ class TestViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        testDefer()
+        testPatterns()
     }
+    
+    // MARK: - Patterns
+    
+    func testPatterns() {
+        testSingleton()
+        testFactoryMethod()
+        testAbstractFactory()
+    }
+    
+    func testSingleton() {
+        NetworkManager.shared.fetchData(from: "https://api.example.com/data")
+    }
+    
+    func testFactoryMethod() {
+        let windowsDialog = WindowsDialog()
+        clientCode(dialog: windowsDialog)
+
+        let macDialog = MacOSDialog()
+        clientCode(dialog: macDialog)
+    }
+    
+    func clientCode(dialog: Dialog) {
+        dialog.renderUI()
+    }
+    
+    func testAbstractFactory() {
+        let windowsFactory = WindowsFactory()
+        clientCode(factory: windowsFactory)
+
+        let macFactory = MacOSFactory()
+        clientCode(factory: macFactory)
+    }
+
+    func clientCode(factory: GUIFactory) {
+        let button = factory.createButton()
+        let checkbox = factory.createCheckbox()
+        
+        button.render()
+        checkbox.check()
+    }
+    
+    // MARK: - Swift Basics
     
     func testInitializers() {
         // Example of using classes

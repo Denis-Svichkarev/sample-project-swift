@@ -62,6 +62,9 @@
 		25C31E532C7B92ED00C7980E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C31E522C7B92ED00C7980E /* Person.swift */; };
 		25C31E582C7D1A9700C7980E /* Animal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C31E572C7D1A9600C7980E /* Animal.swift */; };
 		25C31F2C2CB1434000C7980E /* SOLID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C31F2B2CB1434000C7980E /* SOLID.swift */; };
+		25C31F862CBC513400C7980E /* SingletonExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C31F852CBC513400C7980E /* SingletonExample.swift */; };
+		25C31F882CBC522400C7980E /* FactoryMethodExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C31F872CBC522400C7980E /* FactoryMethodExample.swift */; };
+		25C31F8A2CBC52FA00C7980E /* AbstractFactoryExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25C31F892CBC52FA00C7980E /* AbstractFactoryExample.swift */; };
 		25DE86312C43DACC00A5EADC /* LocalizableService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DE86302C43DACC00A5EADC /* LocalizableService.swift */; };
 		25DE86342C43DAFA00A5EADC /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DE86332C43DAFA00A5EADC /* LoginViewModel.swift */; };
 		25DE86422C43E14700A5EADC /* LoadingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 25DE86412C43E14700A5EADC /* LoadingViewModel.swift */; };
@@ -153,6 +156,9 @@
 		25C31E522C7B92ED00C7980E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		25C31E572C7D1A9600C7980E /* Animal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animal.swift; sourceTree = "<group>"; };
 		25C31F2B2CB1434000C7980E /* SOLID.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SOLID.swift; sourceTree = "<group>"; };
+		25C31F852CBC513400C7980E /* SingletonExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonExample.swift; sourceTree = "<group>"; };
+		25C31F872CBC522400C7980E /* FactoryMethodExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodExample.swift; sourceTree = "<group>"; };
+		25C31F892CBC52FA00C7980E /* AbstractFactoryExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryExample.swift; sourceTree = "<group>"; };
 		25DE86302C43DACC00A5EADC /* LocalizableService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizableService.swift; sourceTree = "<group>"; };
 		25DE86332C43DAFA00A5EADC /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		25DE86412C43E14700A5EADC /* LoadingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingViewModel.swift; sourceTree = "<group>"; };
@@ -570,6 +576,9 @@
 			isa = PBXGroup;
 			children = (
 				25C31F2B2CB1434000C7980E /* SOLID.swift */,
+				25C31F852CBC513400C7980E /* SingletonExample.swift */,
+				25C31F872CBC522400C7980E /* FactoryMethodExample.swift */,
+				25C31F892CBC52FA00C7980E /* AbstractFactoryExample.swift */,
 			);
 			path = Patterns;
 			sourceTree = "<group>";
@@ -784,10 +793,12 @@
 				25A4B4292C3AD25A0052157F /* RegistrationState.swift in Sources */,
 				25C31E532C7B92ED00C7980E /* Person.swift in Sources */,
 				25A4B4342C3AF1240052157F /* CoreCoordinator.swift in Sources */,
+				25C31F862CBC513400C7980E /* SingletonExample.swift in Sources */,
 				2587B8DC2CA06771002CCEC8 /* Generics.swift in Sources */,
 				2502C32C2C301CEE007089D4 /* AuthCoordinator.swift in Sources */,
 				25A4B41A2C3ACDD60052157F /* LoginState.swift in Sources */,
 				25A4B4362C3F12FE0052157F /* Coordinator.swift in Sources */,
+				25C31F8A2CBC52FA00C7980E /* AbstractFactoryExample.swift in Sources */,
 				2587B8E62CA2C8C2002CCEC8 /* ResultBuilders.swift in Sources */,
 				259F60892C396C36007F1F67 /* FriendFetchingService.swift in Sources */,
 				25AFBB422C9C66200036EA70 /* DataServiceTest.swift in Sources */,
@@ -813,6 +824,7 @@
 				2502C3402C315CC2007089D4 /* LoadingViewController.swift in Sources */,
 				2587B8E42CA096F9002CCEC8 /* PropertyWrapper.swift in Sources */,
 				25A4B42D2C3AD8ED0052157F /* LoginStateViewController.swift in Sources */,
+				25C31F882CBC522400C7980E /* FactoryMethodExample.swift in Sources */,
 				2502C3372C3098CD007089D4 /* UserService.swift in Sources */,
 				25A4B42F2C3AD9090052157F /* RegistrationStateViewController.swift in Sources */,
 				25AFBB4A2C9D6AC40036EA70 /* AssociatedTypes.swift in Sources */,
